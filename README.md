@@ -29,8 +29,8 @@ The arguments don't correspond to specific sides. Be sure to handle edge cases s
 
 For example:
 
-```javascript
-isTriangle(0,0,0) # => false, because a triangle can't have 0-length sides
+```
+isTriangle(0,0,0) # => false, because a triangle can't have 0 length sides
 isTriangle(-2,1,5) # => false, because a triangle can't have negative length sides
 
 isTriangle(4,4,4) # => true, an equilateral triangle
@@ -76,26 +76,26 @@ That is, `[1,2,3].pad(3)` should return `[1,2,3]`.
 
 `pad` should always return a **new object**, i.e., it should not modify the original array.
 
-### 5. Count Between
+### 5. Count Numbers Between
 
-Write a function `countBetween` which takes three arguments as input:
+Write a function `countNumbersBetween` which takes three arguments as input:
 
 1. An `Array` of integers
 2. An integer lower bound
 3. An integer upper bound
 
-`countBetween` should return the number of integers in the `Array` that are between the two bounds, **including the bounds**.
+`countNumbersBetween` should return the number of integers in the `Array` that are between the two bounds, **including the bounds**.
 
 It should return 0 if the `Array` is empty.
 
 Some examples:
 
 ```javascript
-countBetween([1, 2, 3], 0, 100);      // => 3
-countBetween([-10, 1, 2], 0, 100);    // => 2
-countBetween([10, 20, 30], 10, 30);   // => 3
-countBetween([], -100, 100);          // => 0
-countBetween([0], 0, 0);              // => 1
+countNumbersBetween([25, 2, 8], 0, 100);          // => 3
+countNumbersBetween([-19, 1, 22], 0, 100);        // => 2
+countNumbersBetween([100, 200, 300], 100, 300);   // => 3
+countNumbersBetween([], -10, 10);                 // => 0
+countNumbersBetween([5], 5, 5);                   // => 1
 ```
 
 ### 6. Factorial
@@ -119,7 +119,7 @@ Write a function `longestString` which takes as its input an `Array` of `Strings
 For example:
 
 ```javascript
-longestString(['cat', 'applesauce', 'apples']); // => "applesauce"
+longestString(['horses', 'cats', 'pineapples']); // => "pineapples"
 ```
 
 If the input `Array` is empty `longestString` should return `null`.
