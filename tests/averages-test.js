@@ -21,9 +21,17 @@ describe('average', function() {
 
   context('median', function(){
     it("returns the median average of an array's values", function(){
-      var array = [4, 8, 6]
+      var array = [4, 8, 6];
 
       assert.equal(averages.median(array), 6)
+    });
+  });
+
+  context('mode', function(){
+    it("returns the mode of an array", function(){
+      var array = [4, 4, 6, 7, 7, 7];
+
+      assert.equal(averages.mode(array), 7)
     });
   });
 });

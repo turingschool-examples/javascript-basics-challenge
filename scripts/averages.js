@@ -15,9 +15,9 @@ function mean(array) {
   return total / length
 };
 
-function median(data) {
+function median(array) {
   // eval(pry.it);
-  var m = data.sort()
+  var m = array.sort()
 
   var middle = Math.floor((m.length - 1) / 2);
    if (m.length % 2) {
@@ -26,4 +26,20 @@ function median(data) {
        return (m[middle] + m[middle + 1]) / 2.0;
     }
 };
-module.exports = {total, mean, median};
+
+function mode(arr) {
+    var numMapping = {};
+    var greatestFreq = 0;
+    var mode;
+    arr.forEach(function findMode(number) {
+        numMapping[number] = (numMapping[number] || 0) + 1;
+
+        if (greatestFreq < numMapping[number]) {
+            greatestFreq = numMapping[number];
+            mode = number;
+        }
+    });
+    return mode;
+};
+
+module.exports = {total, mean, median, mode};
