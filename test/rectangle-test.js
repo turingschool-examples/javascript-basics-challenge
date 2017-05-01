@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const {area, perimeter, diagonal} = require('../lib/rectangle');
+const {area, perimeter, diagonal, isSquare} = require('../lib/rectangle');
 
 describe('area calculation', function() {
   it('calculates area of a rectangle', function() {
@@ -25,5 +25,14 @@ describe('diagonal length calculation', function() {
     var expected = 5;
     var result = diagonal(rectangle);
     assert.equal(result, expected);
+  });
+});
+
+describe('determining if square', function() {
+  it('determines if a rectangle is also a square', function() {
+    var rectangle = { width: 3, height: 4 };
+    var square = { width: 3, height: 3 };
+    assert.equal(isSquare(square), true);
+    assert.equal(isSquare(rectangle), false);
   });
 });
