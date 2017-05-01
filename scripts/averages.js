@@ -16,7 +16,6 @@ function mean(array) {
 };
 
 function median(array) {
-  // eval(pry.it);
   var m = array.sort()
 
   var middle = Math.floor((m.length - 1) / 2);
