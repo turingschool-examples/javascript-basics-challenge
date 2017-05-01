@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const {total, median} = require('../lib/averages');
+const {total, median, mean} = require('../lib/averages');
 
 describe('determine total', function() {
   it('determines sum of all elements in an array', function() {
@@ -14,5 +14,12 @@ describe('determine median', function() {
     var numbersEven = [1, 2, 3, 4, 5, 6];
     assert.equal(median(numbers), 3);
     assert.equal(median(numbersEven), 3.5);
+  });
+});
+
+describe('determine mean', function() {
+  it('determines the mean value for elements in an array', function() {
+    var numbers = [1, 2, 3];
+    assert.equal(mean(numbers), 3);
   });
 });
