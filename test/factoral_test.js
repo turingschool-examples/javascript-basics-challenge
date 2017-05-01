@@ -9,4 +9,7 @@ describe('factoral', function(){
   it("returns a factoral of 1 for zero", function(){
     assert.equal(factoral(1), 1)
   });
+  it("returns 1 for negative numbers", function(){
+    assert.equal(factoral(-2), 1)
+  });
 });
