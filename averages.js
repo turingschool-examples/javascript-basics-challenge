@@ -36,8 +36,19 @@ function median(array){
 };
 
 function mode(array){
-  for
-}
+  var hash = {};
+  mode = {}
+  for(i=0; i<array.length; i++){
+    if (!hash[array[i]]) hash[array[i]] =0;
+    hash[array[i]] += 1
+  };
+  for(i=0; i<array.length; i++){
+    if(hash[array[i].toString()] > Object.entries(mode)[0][1] ){
+      mode = {}
+      mode[array[i].toString()] = hash[array[i]]}
+    }
+    eval(pry.it)
+};
 
 module.exports.total = total;
 module.exports.median = median;
