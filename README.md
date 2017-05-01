@@ -1,6 +1,11 @@
 # JavaScript Basics Challenge
 
-In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to fork this repository and add files for each section below. You'll also need to write corresponding unit tests for each section. When you finish, you'll need to create a Pull Request back to this repository with your completed challenge!
+In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:
+
+* Fork this repository
+* As you work through each section below, add a file (named according to what exercise you're on). 
+* Complete the exercise by writing your JS code and corresponding unit tests.
+* When you finish, create a Pull Request back to this repository with your completed challenge!
 
 ### 1. Rectangles
 
@@ -53,7 +58,7 @@ Add four instance methods to Javascript's `Array`:
 3. `median` - returns the median of the array
 4. `mode`- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
 
-You'll need to research extending built-in JavaScript objects. Generally, we want to avoid extending JavaScript's built in classes, but this is just an exercise. 
+**Note: You'll need to research extending built-in JavaScript objects.** Generally, we want to _avoid_ extending JavaScript's built in classes, but this is just an exercise. 
 
 ### 4. Pad
 
@@ -75,6 +80,8 @@ That is, `[1,2,3].pad(3)` should return `[1,2,3]`.
 `myArray.pad(0)` should always return an array equal to `myArray`.
 
 `pad` should always return a **new object**, i.e., it should not modify the original array.
+
+**Note: you'll want to use what you learned about extending built-in JavaScript objects in the previous exercise.**
 
 ### 5. Count Numbers Between
 
