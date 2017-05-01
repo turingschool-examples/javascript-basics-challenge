@@ -28,10 +28,16 @@ describe('rectangle', function() {
   });
 
   context('isSquare', function() {
-    it('retunrs true if the rectangle is a square', function() {
+    it('returns true if the rectangle is a square', function() {
       var r = {width: 20, height: 20}
 
-      assert.isTrue(rectangle.isSquare(r), true)
+      assert.isTrue(rectangle.isSquare(r))
+    });
+
+    it('returns false if the rectangle is not a square', function() {
+      var r = {width: 20, height: 10}
+
+      assert.isFalse(rectangle.isSquare(r))
     });
   });
 });
