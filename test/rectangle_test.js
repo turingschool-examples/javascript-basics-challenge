@@ -20,7 +20,6 @@ describe('rectangles', function() {
 
    it("can tell if the rectangle is a square", function(){
      var actualRectangle = {width: 10, height: 20}
-    
      assert.equal(rectangle.isSquare(actualRectangle), false)
      var square = {width: 10, height: 10}
      assert.equal(rectangle.isSquare(square), true)
