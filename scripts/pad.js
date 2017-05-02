@@ -1,12 +1,9 @@
 var pry = require('pryjs');
 
 Array.prototype.pad = function(value, arg) {
-  if (value == 0 ) {
+  if (value == 0 || value <= this.length ) {
     var newArray = this
     return newArray
-  }
-  if (value == this.length) {
-    return this
   }
   var toPad = value - this.length
     for (var i = 0; i < toPad; i++) {
