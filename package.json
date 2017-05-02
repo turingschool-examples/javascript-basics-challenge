@@ -1,0 +1,23 @@
+{
+  "name": "javascript-basics-challenge",
+  "version": "1.0.0",
+  "description": "In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edilenedacruz/javascript-basics-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edilenedacruz/javascript-basics-challenge/issues"
+  },
+  "homepage": "https://github.com/edilenedacruz/javascript-basics-challenge#readme"
+}
