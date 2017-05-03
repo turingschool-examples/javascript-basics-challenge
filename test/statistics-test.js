@@ -27,16 +27,3 @@ context('statistics', function(){
   });
 
 });
-
-
-// context('mode', function(){
-//   it('for an array with one mode', function(){
-//     arr = iArray([10, 20, 20, 30])
-//     assert.deepEqual(arr.mode(), {'2': ['20']});
-//   });
-
-//   it('for an array with two modes', function(){
-//     arr = iArray([10, 20, 30, 30, 30, 40, 40, 40, 50])
-//     assert.deepEqual([10, 20, 30, 30, 30, 40, 40, 40, 50].mode(), {'3': ['30', '40']});
-//   });
-// });

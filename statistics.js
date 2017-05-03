@@ -1,6 +1,3 @@
-// pry = require('pryjs')
-// // eval(pry.it)
-
 Array.prototype.sum = function () {
   var sum = 0
   for(var i = 0; i < this.length; i++) {
