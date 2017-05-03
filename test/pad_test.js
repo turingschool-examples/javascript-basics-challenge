@@ -7,7 +7,15 @@ describe("array object returns a padded function", function(){
     it("when passed 0 returns the array", function() {
       var array = [1, 2, 3, 4, 5]
       var result = array.pad(0)
-      assert.deepEqual(array.pad(0), array);
+      assert.deepEqual(result, array);
+    });
+
+    it("when passed more than the array index returns the array", function() {
+      var array = [1, 2, 3]
+      var result = array.pad(5)
+      var expected = [1, 2, 3, null, null]
+      console.log(result)
+      assert.deepEqual(result, expected);
     });
   });
 });

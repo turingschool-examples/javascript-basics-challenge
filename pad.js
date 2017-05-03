@@ -1,12 +1,16 @@
 pry = require('pryjs')
 
-var pad = Array.prototype.pad = function(min, pad) {
+var pad = Array.prototype.pad = function(num, pad) {
   var array = this;
+  var length = array.length
 
-  if (array.length <= min) {
+  if (num == 0) {
     return array
-  } else {
-    array.fill(pad)
+  } else if (length <= num) {
+    return array
+  }
+    else {
+    array.(pad, num, num.length)
   }
 }
 
