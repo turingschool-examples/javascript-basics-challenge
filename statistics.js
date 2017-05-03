@@ -1,16 +1,7 @@
-pry = require('pryjs')
-// eval(pry.it)
+// pry = require('pryjs')
+// // eval(pry.it)
 
-function iArray(arr) {
-  return Object.assign([], arr || [], {
-    total: totalBuiltin,
-    mean: meanBuiltin,
-    median: medianBuiltin,
-    mode: modeBuiltin
-  });
-};
-
-function totalBuiltin() {
+Array.prototype.sum = function () {
   var sum = 0
   for(var i = 0; i < this.length; i++) {
     sum += this[i]
@@ -18,7 +9,7 @@ function totalBuiltin() {
   return sum
 };
 
-function meanBuiltin() {
+Array.prototype.mean = function () {
   var sum = 0
   for(var i = 0; i < this.length; i++) {
     sum += this[i]
@@ -26,7 +17,7 @@ function meanBuiltin() {
   return sum / this.length
 };
 
-function medianBuiltin() {
+Array.prototype.median = function () {
   this.sort
   if(this.length % 2 == 0) {
     var i1 = this.length / 2
@@ -38,7 +29,7 @@ function medianBuiltin() {
   }
 };
 
-function modeBuiltin() {
+Array.prototype.mode = function () {
   this.sort;
   var counts = {};
   for (var i = 0; i < this.length; i++) {
@@ -63,5 +54,3 @@ function max_by_value(counts, max) {
   };
   return modes
 };
-
-module.exports = iArray
