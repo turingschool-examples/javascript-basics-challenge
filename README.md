@@ -60,30 +60,7 @@ Add four instance methods to Javascript's `Array`:
 
 **Note: You'll need to research extending built-in JavaScript objects.** Generally, we want to _avoid_ extending JavaScript's built in classes, but this is just an exercise. 
 
-### 4. Pad
-
-Add a method `pad` to Javascript's `Array`. The method should accept a minimum size (non-negative integer) and an optional pad value as arguments.
-
-If the array's length is less than the minimum size, `pad` should return a new array padded with the pad value up to the minimum size.
-
-For example:
-
-```javascript
-[1,2,3].pad(5);           // [1,2,3,null,null]
-[1,2,3].pad(5, 'apple')   // [1,2,3,'apple','apple']
-```
-
-If the minimum size is less than or equal to the length of the array, it should just return the array.
-
-That is, `[1,2,3].pad(3)` should return `[1,2,3]`.
-
-`myArray.pad(0)` should always return an array equal to `myArray`.
-
-`pad` should always return a **new object**, i.e., it should not modify the original array.
-
-**Note: you'll want to use what you learned about extending built-in JavaScript objects in the previous exercise.**
-
-### 5. Count Numbers Between
+### 4. Count Numbers Between
 
 Write a function `countNumbersBetween` which takes three arguments as input:
 
@@ -105,7 +82,7 @@ countNumbersBetween([], -10, 10);                 // => 0
 countNumbersBetween([5], 5, 5);                   // => 1
 ```
 
-### 6. Factorial
+### 5. Factorial
 
 Write a `factorial` function which takes as its input a non-negative integer and calculates the factorial of that number.
 
@@ -119,7 +96,7 @@ The factorial of 0 is defined to be 1.
 
 Read the following [Wikipedia article](http://en.wikipedia.org/wiki/Factorial) for more information.
 
-### 7. Longest String
+### 6. Longest String
 
 Write a function `longestString` which takes as its input an `Array` of `Strings` and returns the longest `String` in the `Array`.
 
@@ -131,7 +108,7 @@ longestString(['horses', 'cats', 'pineapples']); // => "pineapples"
 
 If the input `Array` is empty `longestString` should return `null`.
 
-### 8. Times Table
+### 7. Times Table
 
 Implement a function called `timesTable` which takes as its input an integer representing a number of rows and produces a string representing a times table with that number of rows.
 
@@ -147,7 +124,7 @@ For example, `timesTable(5)` should print the following out to the screen:
 5  10 15 20 25
 ```
 
-### 9. Guessing Game
+### 8. Guessing Game
 
 Create a `GuessingGame` constructor function which is initialized with an integer called `answer`.
 
