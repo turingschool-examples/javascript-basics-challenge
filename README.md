@@ -9,7 +9,8 @@ In this challenge, you'll deepen your JavaScript fundamentals by completing a se
 
 ### Getting Started
 
-1. git clone git@github.com:valerietrudell/javascript-basics-challenge.git
+1. git clone
+github.com/valerietrudell/javascript-basics-challenge.git
 2. cd javascript-basics-challenge
 3. mkdir lib && mkdir test
 4. npm init *In the package.json make sure to add next to the "'test' : 'mocha test/*Test.js'"
@@ -17,7 +18,7 @@ In this challenge, you'll deepen your JavaScript fundamentals by completing a se
 6. npm i mocha --save-dev
 7. npm i chai --save-dev
 8. npm i pryjs --save-dev  
-9. In the test files: make sure to require the file and assert: 
+9. In the test files: make sure to require the file and assert:
   const assert = require('chai').assert
 
 
