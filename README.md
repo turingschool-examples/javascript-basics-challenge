@@ -3,9 +3,27 @@
 In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:
 
 * Fork this repository
-* As you work through each section below, add a file (named according to what exercise you're on). 
+* As you work through each section below, add a file (named according to what exercise you're on).
 * Complete the exercise by writing your JS code and corresponding unit tests.
 * When you finish, create a Pull Request back to this repository with your completed challenge!
+
+### Getting Started
+
+1. git clone
+github.com/valerietrudell/javascript-basics-challenge.git
+2. cd javascript-basics-challenge
+3. mkdir lib && mkdir test
+4. npm init *In the package.json make sure to add next to the "'test' : 'mocha test/*Test.js'"
+5. npm i express --save
+6. npm i mocha --save-dev
+7. npm i chai --save-dev
+8. npm i pryjs --save-dev  
+9. In the test files: make sure to require the file and assert:
+  const assert = require('chai').assert
+
+
+
+
 
 ### 1. Rectangles
 
@@ -58,7 +76,7 @@ Add four instance methods to Javascript's `Array`:
 3. `median` - returns the median of the array
 4. `mode`- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
 
-**Note: You'll need to research extending built-in JavaScript objects.** Generally, we want to _avoid_ extending JavaScript's built in classes, but this is just an exercise. 
+**Note: You'll need to research extending built-in JavaScript objects.** Generally, we want to _avoid_ extending JavaScript's built in classes, but this is just an exercise.
 
 ### 4. Count Numbers Between
 

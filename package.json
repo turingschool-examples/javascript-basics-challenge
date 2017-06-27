@@ -1,0 +1,30 @@
+{
+  "name": "javascript-basics-challenge",
+  "version": "1.0.0",
+  "description": "Nine total challenges all javascript all math problems",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*Test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valerietrudell/javascript-basics-challenge.git"
+  },
+  "author": "Valerie Trudell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valerietrudell/javascript-basics-challenge/issues"
+  },
+  "homepage": "https://github.com/valerietrudell/javascript-basics-challenge#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "pryjs": "^1.0.3"
+  }
+}
