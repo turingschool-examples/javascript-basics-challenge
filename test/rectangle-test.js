@@ -3,6 +3,10 @@ const rectangle = require('../rectangle');
 
 describe('rectangle functions', function() {
 
+    it('is a function', function() {
+      assert.isFunction(rectangle.area);
+    });
+
     it('can determine the rectangle area', function() {
       assert.equal(rectangle.area({width: 10, height: 20}), 200);
     });
