@@ -1,7 +1,7 @@
 const assert = require("chai").assert;
 const countNumbersBetween = require("./countNumbersBetween.js");
 
-describe("countNumbersBetween two numbers in an array, ordered by value", function() {
+describe("countNumbersBetween two numbers in an array", function() {
   context("arrays", function() {
     it("can count the numbers between", function() {
       assert.equal(countNumbersBetween([1, 2, 3, 4, 5], 1, 5), 3);
