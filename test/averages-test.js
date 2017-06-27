@@ -27,6 +27,7 @@ describe('averages functions', function() {
   it('returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency', function() {
     var arr = [3, 13, 7, 5, 21, 23, 39, 23, 40, 23, 14, 12, 56, 23, 29];
     assert.equal(arr.mode(), 23);
+    // need to update this to return the KV pair instead of just the mode
   });
 
 
