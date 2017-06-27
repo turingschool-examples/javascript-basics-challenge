@@ -1,0 +1,14 @@
+{
+  "name": "classwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basicsChallenge-test.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
