@@ -9,13 +9,13 @@ describe('GuessingGame', function () {
     assert.equal(expected_one, false)
 
     let expected_two = game.guess(5)
-    assert.equal(expected_two, 'low')
+    assert.equal(expected_two, "Too low, guess again")
 
     let expected_three = game.guess(40)
-    assert.equal(expected_three, 'high')
+    assert.equal(expected_three, "Too high, guess again")
 
     let expected_four = game.guess(20)
-    assert.equal(expected_four, 'correct')
+    assert.equal(expected_four, "Correct. Winner, Winner chicken dinner!")
 
     let expected_five = game.isSolved()
     assert.equal(expected_five, true)
