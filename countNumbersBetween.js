@@ -6,9 +6,6 @@ function countNumbersBetween(arr, lower, upper) {
     }
   }
   return count;
-
-  // var pry = require('pryjs');
-  // eval(pry.it);
 }
 
 module.exports = countNumbersBetween
