@@ -7,7 +7,6 @@ it('does correct', function() {
   assert.equal(game.guess(5), "low")
   assert.equal(game.guess(40), "high")
   assert.isFalse(game.isSolved())
-
-  // assert.equal(game.guess(20), "correct")
-  // assert.isTrue(game.isSolved());
+  assert.equal(game.guess(20), "correct")
+  assert.isTrue(game.isSolved());
 })

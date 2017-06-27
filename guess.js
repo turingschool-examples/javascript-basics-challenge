@@ -1,24 +1,23 @@
 var pry = require('pryjs');
 
 function GuessingGame(answer) {
-  this.guess = function(guess) {
-    if(guess > answer) {
-      return 'high';
-    } else if (guess < answer) {
-      return 'low';
-    } else {
-      return 'correct';
-    }
-  }
+  this.answer = answer;
+  this.solved = false;
+}
 
-  this.isSolved = function() {
-    eval(pry.it)
-    if(this.guess() === 'correct') {
-      return true;
-    } else {
-      return false;
-    }
+GuessingGame.prototype.guess = function(guess) {
+  if(guess > this.answer) {
+    return 'high';
+  } else if (guess < this.answer) {
+    return 'low';
+  } else {
+    this.solved = true
+    return 'correct';
   }
+}
+
+GuessingGame.prototype.isSolved = function() {
+  return this.solved;
 }
 
 module.exports = GuessingGame
