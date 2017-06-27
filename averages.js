@@ -34,11 +34,13 @@ Array.prototype.mode = function() {
     counter[this[i]] = (counter[this[i]] || 0) + 1;
     if(counter[this[i]] > max) {
       max = counter[this[i]];
-      mode = [this[i]];
+      mode = {
+        [this[i]]: counter[this[i]]
+      }
+      // var pry = require('pryjs');
+      // eval(pry.it);
     }
   }
-  // var pry = require('pryjs');
-  // eval(pry.it);
   return mode;
 };
 
