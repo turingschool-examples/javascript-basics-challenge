@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 const rectangles = require('../rectangles');
-
+const triangles = require('../triangles')
 var rectangle = {
   width : 10,
   height : 20
@@ -26,3 +26,12 @@ describe("it can do the rectangular functions", function(){
   });
 
 });
+
+ describe('it can to the triangle function', function(){
+   it("can find out the possibility of triangleness", function(){
+     assert.equal(triangles.isTriangle(0,0,0), false);
+     assert.equal(triangles.isTriangle(10,8,6), true);
+     assert.equal(triangles.isTriangle(16,8,6), false);
+     assert.equal(triangles.isTriangle(16,8,-6), false);
+   });
+ });
