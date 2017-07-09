@@ -4,7 +4,7 @@ const rectangle = require('../lib/rectangles');
 const area = rectangle.area;
 const perimeter = rectangle.perimeter;
 const diagonal = rectangle.diagonal
-const isSquare = rectangle.square
+const isSquare = rectangle.isSquare
 
 
 describe("area", function() {
