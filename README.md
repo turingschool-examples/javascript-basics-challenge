@@ -5,7 +5,8 @@ In this challenge, you'll deepen your JavaScript fundamentals by completing a se
 * Fork this repository
 * As you work through each section below, add a file (named according to what exercise you're on). 
 * Complete the exercise by writing your JS code and corresponding unit tests.
-* When you finish, create a Pull Request back to this repository with your completed challenge!
+* **When you finish, create a Pull Request back to this repository with your completed challenge!**
+* If you have questions, please tag an instructor in your PR.
 
 ### 1. Rectangles
 
@@ -49,40 +50,20 @@ isTriangle(4, 8, 50) #=> false, no such triangle exists
 
 It might be helpful to read this [Wikipedia article about Pythagorean triples](http://en.wikipedia.org/wiki/Pythagorean_triple).
 
+**Don't forget to write tests!**
+
 ### 3. Averages
 
-Add four instance methods to Javascript's `Array`:
+Write a function for each of the following. Each function will take an Array as the one argument..
 
 1. `total` - returns the total of all the values in the array
 2. `mean` - returns the mean (average) of the array
 3. `median` - returns the median of the array
 4. `mode`- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
 
-**Note: You'll need to research extending built-in JavaScript objects.** Generally, we want to _avoid_ extending JavaScript's built in classes, but this is just an exercise. 
+**Don't forget to write tests for each function!**
 
-### 4. Count Numbers Between
-
-Write a function `countNumbersBetween` which takes three arguments as input:
-
-1. An `Array` of integers
-2. An integer lower bound
-3. An integer upper bound
-
-`countNumbersBetween` should return the number of integers in the `Array` that are between the two bounds, **including the bounds**.
-
-It should return 0 if the `Array` is empty.
-
-Some examples:
-
-```javascript
-countNumbersBetween([25, 2, 8], 0, 100);          // => 3
-countNumbersBetween([-19, 1, 22], 0, 100);        // => 2
-countNumbersBetween([100, 200, 300], 100, 300);   // => 3
-countNumbersBetween([], -10, 10);                 // => 0
-countNumbersBetween([5], 5, 5);                   // => 1
-```
-
-### 5. Factorial
+### 4. Factorial
 
 Write a `factorial` function which takes as its input a non-negative integer and calculates the factorial of that number.
 
@@ -96,7 +77,9 @@ The factorial of 0 is defined to be 1.
 
 Read the following [Wikipedia article](http://en.wikipedia.org/wiki/Factorial) for more information.
 
-### 6. Longest String
+**Don't forget to write tests!**
+
+### 5. Longest String
 
 Write a function `longestString` which takes as its input an `Array` of `Strings` and returns the longest `String` in the `Array`.
 
@@ -108,7 +91,9 @@ longestString(['horses', 'cats', 'pineapples']); // => "pineapples"
 
 If the input `Array` is empty `longestString` should return `null`.
 
-### 7. Times Table
+**By now, you're totally remembering to write tests!**
+
+### 6. Times Table
 
 Implement a function called `timesTable` which takes as its input an integer representing a number of rows and produces a string representing a times table with that number of rows.
 
@@ -124,7 +109,9 @@ For example, `timesTable(5)` should print the following out to the screen:
 5  10 15 20 25
 ```
 
-### 8. Guessing Game
+**By now, you're totally remembering to write tests!**
+
+### 7. Guessing Game
 
 Create a `GuessingGame` constructor function which is initialized with an integer called `answer`.
 
@@ -145,4 +132,28 @@ game.isSolved();   // => false
 
 game.guess(20);    // => 'correct'
 game.isSolved()    // => true
+```
+
+**Wooo you're done! Double check that you have tests covering each piece of functionality!**
+
+### EXTENSION: Count Numbers Between
+
+Write a function `countNumbersBetween` which takes three arguments as input:
+
+1. An `Array` of integers
+2. An integer lower bound
+3. An integer upper bound
+
+`countNumbersBetween` should return the number of integers in the `Array` that are between the two bounds, **including the bounds**.
+
+It should return 0 if the `Array` is empty.
+
+Some examples:
+
+```javascript
+countNumbersBetween([25, 2, 8], 0, 100);          // => 3
+countNumbersBetween([-19, 1, 22], 0, 100);        // => 2
+countNumbersBetween([100, 200, 300], 100, 300);   // => 3
+countNumbersBetween([], -10, 10);                 // => 0
+countNumbersBetween([5], 5, 5);                   // => 1
 ```
