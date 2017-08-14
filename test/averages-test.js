@@ -18,20 +18,14 @@ describe("averages functions", function(){
   });
 
   it("returns the median of the array", function() {
-    var expected = 'cat';
+    var expected = 3;
     var actual = median([1, 2, 3, 4, 5]);
     assert.equal(expected, actual);
   });
 
   it("returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency", function() {
-    var expected = 'cat';
-    var actual = mode([1, 2, 3, 4, 5]);
-    assert.equal(expected, actual);
+    var expected = {2: 4};
+    var actual = mode([1, 2, 3, 4, 5, 2, 3, 5, 2, 1, 2]);
+    assert.deepEqual(expected, actual);
   });
 })
-// Write a function for each of the following. Each function will take an Array as the one argument..
-
-// total - returns the total of all the values in the array
-// mean - returns the mean (average) of the array
-// median - returns the median of the array
-// mode- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
