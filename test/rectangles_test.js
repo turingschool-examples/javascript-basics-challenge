@@ -35,11 +35,4 @@ describe('With a suite of geometric functions', function() {
     assert.equal(rectangleF.isSquare(square), true);
   });
 
-})
-
-// You're expected to write the following functions:
-//
-// area(rectangle) - returns the area of the rectangle
-// perimeter(rectangle) - returns the perimeter of the rectangle
-// diagonal(rectangle) - returns the length of the rectangle's diagonal
-// isSquare(rectangle) - returns true if the rectangle is a square and false otherwise
+});
