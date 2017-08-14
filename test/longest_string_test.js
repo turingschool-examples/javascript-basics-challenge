@@ -23,3 +23,8 @@ it("can do the thing", function() {
     let collection = ['one', 'two']
     assert.equal(longestString(collection), "one")
 })
+
+it("can do the thing", function() {
+    let collection = []
+    assert.equal(longestString(collection), null)
+})
