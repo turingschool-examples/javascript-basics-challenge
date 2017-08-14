@@ -1,4 +1,5 @@
 const assert = require('chai').assert;
+const total = require('../lib/averages');
 
 describe("Average calculations", () => {
   context("Given a dataset", () => {
