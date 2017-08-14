@@ -4,7 +4,7 @@ const factorial = require('../factorial')
 const pry = require('pryjs')
 
 it("can do the thing", function() {
-    assert.equal(factorial(0), 1)
+    assert.equal(factorial(0), 0)
 })
 
 it("can do the thing", function() {
