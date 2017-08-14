@@ -22,9 +22,9 @@ describe("it can determine if a shape is a triangle", function() {
     assert.equal(isTriangle(3, 4, 0), "false, because a triangle can't have 0 length sides")
   })
 
-  // it("returns 'equilateral triangle' when all sides are the same", function() {
-  //
-  // })
+  it("returns 'equilateral triangle' when all sides are the same", function() {
+    assert.equal(isTriangle(4,4,4), "true, an equilateral triangle")
+  })
 
   // it("returns 'right triangle' when conditions are correct", function() {
   //
