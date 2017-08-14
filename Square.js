@@ -15,6 +15,10 @@ class Square {
   diagonal() {
     return Math.sqrt(this.width * this.width + this.height * this.height)
   }
+
+  isSquare() {
+    return this.width === this.height
+  }
 }
 
 module.exports = Square

@@ -38,4 +38,16 @@ describe('Square', () => {
       assert.equal(mySquare.diagonal(), 22.360679774997898)
     })
   })
+
+  context ('.isSquare()', () => {
+    it('it can return tell when it is a square', () => {
+      const mySquare = new square({width: 10, height: 10})
+      assert.isTrue(mySquare.isSquare())
+    })
+
+    it('it can return tell when it is not a square', () => {
+      const mySquare = new square({width: 10, height: 11})
+      assert.isFalse(mySquare.isSquare())
+    })
+  })
 })
