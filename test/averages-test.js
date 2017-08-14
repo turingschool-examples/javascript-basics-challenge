@@ -6,7 +6,7 @@ const mode = require('../averages').mode;
 
 describe("averages functions", function(){
   it("returns the total of all the values in the array", function() {
-    var expected = 'cat';
+    var expected = 15;
     var actual = total([1, 2, 3, 4, 5]);
     assert.equal(expected, actual);
   });
