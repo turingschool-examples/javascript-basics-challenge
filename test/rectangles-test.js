@@ -25,6 +25,20 @@ describe("rectangle functions", function() {
     var actual = diagonal(rectangle);
     assert.equal(expected, actual);
   })
+
+  it("returns true if the rectangle is a square", function(){
+    var rectangle = {width: 10, height: 10};
+    var expected = true;
+    var actual = isSquare(rectangle);
+    assert.equal(expected, actual);
+  })
+
+  it("returns false if the rectangle is not a square", function(){
+    var rectangle = {width: 10, height: 20};
+    var expected = false;
+    var actual = isSquare(rectangle);
+    assert.equal(expected, actual);
+  })
 })
 
 
