@@ -1,5 +1,6 @@
 const assert = require('chai').assert;
-const area = require('../lib/rectangle');
+const area = require('../lib/rectangle').area;
+const perimeter = require('../lib/rectangle').perimeter;
 
 describe("Rectangle", () => {
   context("Given a width and a height", () => {
