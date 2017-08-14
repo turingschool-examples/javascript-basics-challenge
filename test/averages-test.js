@@ -27,6 +27,6 @@ describe('median functionality', function () {
   });
 
   it('can find the median of the array', function () {
-    assert.deepEqual(median([1, 2, 4, 2, 3]), 4);
+    assert.deepEqual(median([1, 2, 4, 2, 3]), 2);
   });
 });
