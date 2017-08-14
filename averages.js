@@ -2,4 +2,8 @@ const total = (arr) => {
   return arr.reduce( (sum, value) => sum + value )
 }
 
-module.exports = total
+const mean = (arr) => {
+  return total(arr) / arr.length
+}
+
+module.exports = {total, mean}
