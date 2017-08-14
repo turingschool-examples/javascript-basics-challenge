@@ -25,7 +25,7 @@ describe("Average calculations", () => {
 
     it("calculates the number of occurrences of each element", () => {
       var data_with_repetition = [5, 5, 2, 5, 2, 7];
-      assert.equal(element_occurrences(data_with_repetition),
+      assert.deepEqual(element_occurrences(data_with_repetition),
         { 5: 3, 2: 2, 7: 1}
       );
     });
