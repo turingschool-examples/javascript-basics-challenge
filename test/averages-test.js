@@ -12,7 +12,7 @@ describe("averages functions", function(){
   });
 
   it("returns the mean (average) of the array", function() {
-    var expected = 'cat';
+    var expected = 3;
     var actual = mean([1, 2, 3, 4, 5]);
     assert.equal(expected, actual);
   });

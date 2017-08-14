@@ -5,7 +5,7 @@ function total(nums) {
 };
 
 function mean(nums) {
-
+  return total(nums)/nums.length;
 };
 
 function median(nums) {
