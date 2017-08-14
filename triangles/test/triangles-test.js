@@ -6,6 +6,10 @@ describe("it can determine if a shape is a triangle", function() {
     assert.equal(isTriangle(3, 4, 5), true)
   })
 
+  it("returns false if the sides cannot form a triangle", function() {
+    assert.equal(isTriangle(3,2,1), false)
+  })
+
   // it("returns false when the sides contain a negative number", function() {
   //
   // }
@@ -15,10 +19,6 @@ describe("it can determine if a shape is a triangle", function() {
   // })
 
   // it("returns 'right triangle' when conditions are correct", function() {
-  //
-  // })
-
-  // it("returns false if the sides cannot form a triangle", function() {
   //
   // })
 
