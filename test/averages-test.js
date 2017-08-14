@@ -20,3 +20,13 @@ describe('average/mean functionality', function () {
     assert.deepEqual(mean([1, 2, 2, 3]), 2);
   });
 });
+
+describe('median functionality', function () {
+  it('is a function', function() {
+    assert.isFunction(median, 'this is a function');
+  });
+
+  it('can find the median of the array', function () {
+    assert.deepEqual(median([1, 2, 4, 2, 3]), 4);
+  });
+});
