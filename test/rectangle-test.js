@@ -19,5 +19,12 @@ describe("Rectangle", () => {
       var rectangle_3_4 = { width: 3, height: 4 };
       assert.equal(diagonal(rectangle_3_4), 5);
     });
+
+    it("determines if a rectangle is a square", () => {
+      var square = { width: 10, height: 10 };
+      var not_square = { width: 10, height: 20 };
+      assert.equal(isSquare(square), true)
+      assert.equal(isSquare(not_square), false);
+    });
   });
 });
