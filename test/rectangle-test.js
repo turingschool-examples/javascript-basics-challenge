@@ -7,5 +7,10 @@ describe("Rectangle", () => {
       var rectangle = { width: 10, height: 20 };
       assert.equal(area(rectangle), 200);
     });
+
+    it("calculates the perimeter", () => {
+      var rectangle = { width: 10, height: 20 };
+      assert.equal(perimeter(rectangle), 60);
+    });
   });
 });
