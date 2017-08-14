@@ -1,5 +1,6 @@
+var pry = require('pryjs');
 const assert = require('chai').assert;
-const guessingGame = require('../guess.js');
+const GuessingGame = require('../guess.js');
 
 
 describe("guessingGame constructor function", function() {
@@ -13,7 +14,7 @@ describe("guessingGame constructor function", function() {
     assert.equal(expected, actual);
   });
 
-  it('returns "high" if the guess is larger than the answer and isSolved returns false', function() {
+  it('returns "low" if the guess is smaller than the answer and isSolved returns false', function() {
     var game = new GuessingGame(20);
     var expected = 'low';
     var actual = game.guess(4);
