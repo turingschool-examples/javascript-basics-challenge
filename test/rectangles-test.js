@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const area = require('../rectangles').area
 const perimeter = require('../rectangles').perimeter
 const diagonal = require('../rectangles').diagonal
-
+const isSquare = require('../rectangles').isSquare
 
 describe("rectangle functions", function() {
   it("returns the area of the rectangle", function() {

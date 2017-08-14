@@ -11,8 +11,8 @@ function diagonal(rectangle){
   return Math.sqrt(sum);
 };
 
-function isSquare(){
-
+function isSquare(rectangle){
+  return (rectangle.height === rectangle.width)
 };
 
 module.exports = {
