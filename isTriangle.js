@@ -21,13 +21,21 @@ const compareNumbers = (a, b) => {
   return a - b;
 }
 
+const passesPythagorean = (dimensions) => {
+  return (squared(dimensions[0]) + squared(dimensions[1]) === squared(dimensions[2]))
+}
+
+const allEqual = (arr) => {
+  return arr.every( v => v === arr[0] )
+}
+
 const isTriangle = (...dimensions) => {
   if (anyEqual(dimensions, 0)) return false
   if (anyLessThan(dimensions, 0)) return false
 
-  if (dimensions[0] === dimensions[1] && dimensions[1] === dimensions[2]) return true
+  if (allEqual(dimensions)) return true
   dimensions.sort(compareNumbers)
-  return (squared(dimensions[0]) + squared(dimensions[1]) === squared(dimensions[2]))
+  return passesPythagorean(dimensions)
 }
 
 module.exports = isTriangle

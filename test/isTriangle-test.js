@@ -56,6 +56,3 @@ describe('isTriangle', () => {
     })
   })
 })
-
-
-// isTriangle(4, 8, 50) #=> false, no such triangle exists
