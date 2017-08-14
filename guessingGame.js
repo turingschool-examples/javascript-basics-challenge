@@ -9,7 +9,14 @@ class guessingGame {
   }
 
   guess(num) {
-    if(num === this.answer) this.solved = true
+    if(num === this.answer) {
+      this.solved = true
+      return 'correct'
+    } else if (num > this.answer) {
+      return 'high'
+    } else {
+      return 'low'
+    }
   }
 }
 

@@ -16,11 +16,29 @@ describe('isSolved()', () => {
       assert.isTrue(game.isSolved())
     })
   })
+
+  context('when the guess is high', () => {
+    it('it returns "high"', () => {
+      game = new guessingGame(1)
+      assert.equal(game.guess(10), "high")
+    })
+  })
+
+  context('when the guess is low', () => {
+    it('it returns "low"', () => {
+      game = new guessingGame(10)
+      assert.equal(game.guess(1), "low")
+    })
+  })
+
+  context('when the guess is correct', () => {
+    it('it returns "correct"', () => {
+      game = new guessingGame(10)
+      assert.equal(game.guess(10), "correct")
+    })
+  })
 })
 
-// Create a `GuessingGame` constructor function which is
-// initialized with an integer called `answer`.
-//
 // Define an instance method `guess` which takes an integer
 // called `guess` as its input. `guess` should return the string
 // `'high'` if the `guess` is larger than the `answer`, `'correct'`
