@@ -4,8 +4,13 @@ const total = require('../lib/averages');
 describe("Average calculations", () => {
   context("Given a dataset", () => {
     var data = [3, 1, 2, 4];
+
     it("calculates the sum", () => {
       assert.equal(total(data), 10);
+    });
+
+    it("calculates the mean", () => {
+      assert.equal(mean(data), 2.5);
     });
   });
 });
