@@ -1,5 +1,6 @@
-var assert = require('chai').assert
-var area = require('../area')
+var assert = require('chai').assert;
+var area = require('../area');
+var perimeter = require('../perimeter');
 
 describe("it can measure a rectangle, specifically: ", function() {
   it("the area", function() {
@@ -9,6 +10,6 @@ describe("it can measure a rectangle, specifically: ", function() {
 
   it("the perimeter", function() {
     var rectangle = {width: 10, height: 20};
-    assert.equal(perimiter(rectangle), 60);
+    assert.equal(perimeter(rectangle), 60);
   })
 })
