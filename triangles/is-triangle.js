@@ -1,6 +1,9 @@
 var isTriangle = function(side1, side2, side3) {
-  if (isNegative(side1, side2, side3)) {
-    return "false, because a triangle can't have negative length sides"
+  // var allSides = [side1, side2, side3]
+  if (zeroSides(side1, side2, side3)) {
+    return "false, because a triangle can't have 0 length sides";
+  } else if (isNegative(side1, side2, side3)) {
+    return "false, because a triangle can't have negative length sides";
   } else if (compareSides(side1, side2, side3)) {
     return true;
   } else {
@@ -19,6 +22,14 @@ isNegative = function(side1, side2, side3) {
     return false;
   } else {
     return true;
+  }
+}
+
+zeroSides = function(side1, side2, side3) {
+  if (side1 === 0 || side2 === 0 || side3 === 0) {
+    return true;
+  } else {
+    return false;
   }
 }
 
