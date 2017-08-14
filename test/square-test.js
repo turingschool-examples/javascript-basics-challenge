@@ -31,4 +31,11 @@ describe('Square', () => {
       assert.equal(mySquare.perimeter(), 60)
     })
   })
+
+  context ('.diagonal()', () => {
+    it('it can return the length of the diagonal of the rectangle', () => {
+      const mySquare = new square({width: 10, height: 20})
+      assert.equal(mySquare.diagonal(), 22.360679774997898)
+    })
+  })
 })
