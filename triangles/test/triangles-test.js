@@ -10,9 +10,9 @@ describe("it can determine if a shape is a triangle", function() {
     assert.equal(isTriangle(3,2,1), false)
   })
 
-  // it("returns false when the sides contain a negative number", function() {
-  //
-  // }
+  it("returns false when the sides contain a negative number", function() {
+    assert.equal(isTriangle(-2,1,5), "false, because a triangle can't have negative length sides")
+  })
 
   // it("returns 'equilateral triangle' when all sides are the same", function() {
   //
