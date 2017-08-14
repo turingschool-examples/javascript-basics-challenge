@@ -1,5 +1,5 @@
 class guessingGame {
-  constructor(answer) {
+  constructor(answer = Math.floor(Math.random() * 100) + 1  ) {
     this.answer = answer
     this.solved = false
   }
