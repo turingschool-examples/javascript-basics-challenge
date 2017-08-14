@@ -11,4 +11,12 @@ it('can detect if 3 lengths of 0 do not create a triangle', function () {
 
 it('can detect if 3 lengths do create an equilateral triangle', function () {
   assert.isTrue(isTriangle(4, 4, 4));
-})
+});
+
+it('can confirm that a triangle cannot have negative length', function () {
+  assert.isFalse(isTriangle(-2, 1, 5));
+});
+
+it('can confirm that a triangle can be found from proper lengths', function () {
+  assert.isTrue(isTriangle(6, 8, 10));
+});
