@@ -2,6 +2,7 @@ const assert = require('chai').assert;
 const area = require('../lib/rectangle').area;
 const perimeter = require('../lib/rectangle').perimeter;
 const diagonal = require('../lib/rectangle').diagonal;
+const isSquare = require('../lib/rectangle').isSquare;
 
 describe("Rectangle", () => {
   context("Given a width and a height", () => {
