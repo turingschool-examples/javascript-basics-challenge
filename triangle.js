@@ -1,15 +1,35 @@
 function checkForZeroOrNegativeLength(sides) {
+  let flag = true
   sides.forEach((side) => {
     if (side <= 0) {
-      return false
+      console.log(side)
+      flag = false
     }
   })
-  return true
+  return flag
+}
+
+function checkForUnequalLengths(sides) {
+  sides.sort((a,b) => {
+    return a - b
+  })
+  if (sides[0] + sides[1] <= sides[2]) {
+    return false
+  } else {
+    return true
+  }
 }
 
 function isTriangle(a, b, c) {
   sides = [a, b, c]
-  return checkForZeroOrNegativeLength(sides)
+  let aTriangle = checkForZeroOrNegativeLength(sides)
+
+  if (aTriangle === false) {
+    return false
+  } else {
+    aTriangle = checkForUnequalLengths(sides)
+  }
+  return aTriangle
 }
 
-let triangleChecker = exports = { isTriangle, checkForZeroOrNegativeLength }
+var exports = module.exports = { isTriangle, checkForZeroOrNegativeLength }
