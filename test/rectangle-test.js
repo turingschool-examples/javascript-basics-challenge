@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const area = require('../lib/rectangle').area;
 const perimeter = require('../lib/rectangle').perimeter;
+const diagonal = require('../lib/rectangle').diagonal;
 
 describe("Rectangle", () => {
   context("Given a width and a height", () => {
@@ -15,8 +16,8 @@ describe("Rectangle", () => {
     });
 
     it("calculates the diagonal", () => {
-      var rectangle_3_4 = { width: 3, height: 4 }
-      assert.equal(diagonal(rectangle), 5)
+      var rectangle_3_4 = { width: 3, height: 4 };
+      assert.equal(diagonal(rectangle_3_4), 5);
     });
   });
 });
