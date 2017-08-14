@@ -5,6 +5,10 @@ it('is a function', function() {
   assert.isFunction(isTriangle, 'this is a function');
 });
 
-it('can detect if 3 lengths create a triangle', function () {
-  assert.deepEqual(isTriangle(0, 0, 0), false);
+it('can detect if 3 lengths of 0 do not create a triangle', function () {
+  assert.isFalse(isTriangle(0, 0, 0));
 });
+
+it('can detect if 3 lengths do create an equilateral triangle', function () {
+  assert.isTrue(isTriangle(4, 4, 4));
+})
