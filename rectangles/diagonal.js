@@ -1,5 +1,10 @@
 var diagonal = function(rectangle) {
-  return Math.sqrt((rectangle["width"] * rectangle["width"]) + (rectangle["height"] * rectangle["height"]));
+  return Math.sqrt(squared(rectangle["width"]) + squared(rectangle["height"]));
+
+}
+
+squared = function(side) {
+  return side * side;
 }
 
 module.exports = diagonal;
