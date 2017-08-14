@@ -49,15 +49,13 @@ describe('isTriangle', () => {
       assert.isTrue(isTriangle(6,10,8))
     })
   })
+
+  context('when positive, non-zero numbers but triangle doesn\'t exist', () => {
+    it('4, 8, 50 should be false', () => {
+      assert.isFalse(isTriangle(4, 8, 50))
+    })
+  })
 })
 
-// isTriangle(0,0,0) # => false, because a triangle can't have 0 length sides
-// isTriangle(-2,1,5) # => false, because a triangle can't have negative length sides
-//
-// isTriangle(4,4,4) # => true, an equilateral triangle
-//
-// isTriangle(6,8,10) # => true, a right triangle
-// isTriangle(8,6,10) # => true, the same right triangle
-// isTriangle(10,8,6) # => true, the same right triangle
-//
+
 // isTriangle(4, 8, 50) #=> false, no such triangle exists
