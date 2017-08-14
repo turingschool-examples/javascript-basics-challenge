@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const total = require('../lib/averages').total;
 const mean = require('../lib/averages').mean;
+const median = require('../lib/averages').median;
 
 describe("Average calculations", () => {
   context("Given a dataset", () => {
