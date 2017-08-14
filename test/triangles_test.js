@@ -1,10 +1,3 @@
-
-// isTriangle(6,8,10) # => true, a right triangle
-// isTriangle(8,6,10) # => true, the same right triangle
-// isTriangle(10,8,6) # => true, the same right triangle
-//
-// isTriangle(4, 8, 50) #=> false, no such triangle exists
-
 const assert = require('chai').assert
 const Triangle = require('../lib/triangles.js')
 
@@ -19,7 +12,7 @@ describe('With a suite of geometric functions', function() {
     triangle = new Triangle(x, y, z);
 
     var actual = triangle.isTriangle()
-    var expected = true
+    var expected = "true, an equilateral triangle"
 
     assert.equal(actual, expected);
   });
@@ -32,7 +25,7 @@ describe('With a suite of geometric functions', function() {
     triangle = new Triangle(x, y, z);
 
     var actual = triangle.isTriangle()
-    var expected = false
+    var expected = "false, a triangle can't have 0 length sides"
 
     assert.equal(actual, expected);
   });
@@ -45,7 +38,7 @@ describe('With a suite of geometric functions', function() {
     triangle = new Triangle(x, y, z);
 
     var actual = triangle.isTriangle()
-    var expected = false
+    var expected = "false, a triangle can't have negative length sides"
 
     assert.equal(actual, expected);
   });
@@ -69,7 +62,7 @@ describe('With a suite of geometric functions', function() {
     var actual5 = triangle5.isTriangle()
     var actual6 = triangle6.isTriangle()
 
-    var expected = true
+    var expected = "true, a right triangle"
 
     assert.equal(actual, expected);
     assert.equal(actual2, expected);
@@ -78,6 +71,32 @@ describe('With a suite of geometric functions', function() {
     assert.equal(actual5, expected);
     assert.equal(actual6, expected);
 
+  });
+
+  it('can determine a non-triangular shape', function() {
+    var x = 3
+    var y = 4
+    var z = 50
+
+    triangle = new Triangle(x, y, z);
+
+    var actual = triangle.isTriangle()
+    var expected = "false, ain't no triangle"
+
+    assert.equal(actual, expected);
+  });
+
+  it('can determine any triangle', function() {
+    var x = 3
+    var y = 4
+    var z = 7
+
+    triangle = new Triangle(x, y, z);
+
+    var actual = triangle.isTriangle()
+    var expected = "true, it's a triangle!"
+
+    assert.equal(actual, expected);
   });
 
 })
