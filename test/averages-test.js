@@ -20,17 +20,9 @@ describe('Calculates', () => {
     assert.equal(result, 15)
   })
 
-  context('calculates the mode', () => {
-    it('returns mode of all values', () => {
-      numbers = [5, 10, 10, 10, 20, 20, 30]
-      let result = utils.mode(numbers)
-      assert.equal(result, 10)
-    })
-
-    it('returns no mode because all numbers are unique', () => {
-      numbers = [5, 10, 15, 100, 20]
-      let result = utils.mode(numbers)
-      assert.equal(result, undefined)
-    })
+  it('returns mode of all values', () => {
+    numbers = [5, 10, 10, 10, 20, 20, 30]
+    let result = utils.mode(numbers)
+    assert.equal(result, 10)
   })
 })
