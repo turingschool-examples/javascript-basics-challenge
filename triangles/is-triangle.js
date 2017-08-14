@@ -5,6 +5,8 @@ var isTriangle = function(side1, side2, side3) {
     return "false, because a triangle can't have negative length sides";
   } else if (isEqualateral(side1, side2, side3)) {
     return "true, an equilateral triangle";
+  } else if (isRight(side1, side2, side3)) {
+    return "true, a right triangle";
   } else if (compareSides(side1, side2, side3)) {
     return true;
   } else {
@@ -36,6 +38,22 @@ zeroSides = function(side1, side2, side3) {
 
 isEqualateral = function(side1, side2, side3) {
   if (side1 === side2 && side2 === side3) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isRight = function(side1, side2, side3) {
+  if (pythagorean(side1, side2, side3) || pythagorean(side1, side3, side2) || pythagorean(side2, side3, side1)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+pythagorean = function(a, b, c) {
+  if ((a * a) + (b * b) === (c * c)) {
     return true;
   } else {
     return false;
