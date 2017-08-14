@@ -18,6 +18,7 @@ describe('Square', () => {
       assert.equal(mySquare.height, 20)
     })
   })
+  
   context ('.area()', () => {
     it('it can return the area of the rectangle', () => {
       const mySquare = new square({width: 10, height: 20})
