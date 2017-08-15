@@ -1,4 +1,6 @@
-const shape = require('../lib/shape');
+const shape = require('../lib/shapes');
+
+console.log(shape)
 
 describe('Rectangle', function(){
   it('Is a Rectangle Object', function(){
