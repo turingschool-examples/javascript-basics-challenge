@@ -2,6 +2,7 @@ var pry = require('pryjs')
 
 class timesTable {
   createTable(num) {
+    if ( typeof num !== 'number' ) { return "Wrong." }
     var vals = this.createFirstRow(num)
     return this.fillTable(vals, num);
   }
