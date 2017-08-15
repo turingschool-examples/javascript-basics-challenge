@@ -10,7 +10,7 @@ describe("Factorial", () => {
     });
 
     it("does not calculate a factorial for a negative number", () => {
-      assert.equal(factorial(-1), undefined);
+      assert.equal(factorial(-1), null);
     });
   });
 });
