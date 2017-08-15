@@ -1,4 +1,12 @@
-function rectangle(width, height) = {
-  this.width = width
-  this.height = height
+class Rectangle {
+  constructor(sides) {
+    this.width = width
+    this.height = height
+  }
+
+  area() {
+    return this.width * this.height
+  }
+
+  
 }
