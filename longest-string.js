@@ -7,6 +7,9 @@ function longestString(arr) {
       var strLength = arr[i].length;
       longest = arr[i];
     }
+    if (arr === []) {
+      return null;
+    }
   }
   return longest;
 }
