@@ -11,8 +11,8 @@ it('returns too low when the guess is lower than answer', function () {
   assert.deepEqual(game.guess(2), "Too low!");
 });
 
-// it('returns true when the game is solved', function () {
-//   game = new guessingGame(1);
-//   game.guess(1);
-//   assert.isTrue(game.isSolved());
-// });
+it('returns correct when the game is solved', function () {
+  game = new guessingGame(1);
+  assert.deepEqual(game.guess(1), "Correct!");
+
+});
