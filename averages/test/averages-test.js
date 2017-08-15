@@ -8,11 +8,11 @@ describe ("it can math an array", function() {
     assert.equal(myMath.total(array), 28);
   })
 
-  // it("mean", function() {
-    // array = [5,7,2,1,5,3,5];
-    // var myMath = new mathing;
-  //   assert.equal(myMath.mean(array), 4);
-  // })
+  it("mean", function() {
+    array = [5,7,2,1,5,3,5];
+    var myMath = new mathing;
+    assert.equal(myMath.mean(array), 4);
+  })
 
   // it("median", function() {
     // array = [5,7,2,1,5,3,5];

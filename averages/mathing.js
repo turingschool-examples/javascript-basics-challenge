@@ -1,9 +1,13 @@
 class Mathing {
   total(arr) {
-    var total = arr.reduce(function(sum, val) {
+    return arr.reduce(function(sum, val) {
       return sum + val;
     }, 0)
-    return total;
+  }
+
+  mean(arr) {
+    return this.total(arr)/arr.length
+
   }
 }
 
