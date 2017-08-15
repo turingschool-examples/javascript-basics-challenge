@@ -39,4 +39,5 @@ describe('mode functionality', function () {
   it('can return an object', function () {
     assert.instanceOf(mode([1, 2, 4, 2, 3]), Object);
   });
+
 });
