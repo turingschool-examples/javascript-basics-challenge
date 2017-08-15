@@ -7,11 +7,13 @@ describe("It can find the longest string", function() {
     assert.equal(myLongest.findLongest(['horses', 'cats', 'pineapples']), "pineapples");
   })
 
-  // it("returns null when the array of strings is empty", function() {
-  //   assert.equal(longestString([]), null);
-  // })
-  //
+  it("returns null when the array of strings is empty", function() {
+    var myLongest = new longestString;
+    assert.equal(myLongest.findLongest([]), null);
+  })
+
   // it("returns an error if any of the values is not a number", function() {
-  //   assert.equal(longestString(['Boudi', 'kitty', 5]));
+    // var myLongest = new longestString;
+  //   assert.equal(myLongest.findLongest(['Boudi', 'kitty', 5]));
   // })
 })
