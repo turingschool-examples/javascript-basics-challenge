@@ -30,8 +30,20 @@ function diagonal(attributes) {
   return Math.sqrt(addition(width, height));
 };
 
+function square(attributes) {
+  let width = Math.pow(attributes.width, 2);
+  let height = Math.pow(attributes.height, 2);
+
+  if(width == height) {
+    return true;
+  } else {
+    return false
+  }
+};
+
 module.exports = {
   area,
   perimeter,
-  diagonal
+  diagonal,
+  square
 }
