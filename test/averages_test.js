@@ -35,6 +35,15 @@ describe('Given an array of numbers', function() {
   });
 
   it('can return an object representing the mode(s)', function() {
+    var arr = [1, 2, 3, 4, 5, 6, 2, 2, 5, 5]
 
+    var actual = averages.mode(arr);
+    var expected = {
+      '2': 3,
+      '5': 3
+    };
+
+    assert.deepEqual(actual, expected);
   });
+
 })
