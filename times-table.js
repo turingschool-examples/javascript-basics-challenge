@@ -1,11 +1,11 @@
 function timesTable(rows) {
-  var result = '';
+  var result = "";
   for (var a = 1; a <= rows; a++) {
-    var row = '';
+    var row = "";
     for (var b = 1; b <= rows; b++) {
-      row += (a * b) + '\t';
+      row += (a * b) + "\t";
     }
-    row += '\n';
+    row += "\n";
     result += row;
   }
   return result;
