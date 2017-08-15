@@ -24,8 +24,10 @@ describe('functions can return different rectangle properties', function() {
 
   it('can return whether width and hieght are equal', function(){
     var attributes = {width: 10, height: 20};
+    var valid_attributes = { width: 100, height: 100 }
 
     assert.equal(rectangles.square(attributes), false)
+    assert.equal(rectangles.square(valid_attributes), true)
   });
 
 })
