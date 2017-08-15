@@ -20,4 +20,10 @@ it('returns true if the game is solved', function () {
   game = new guessingGame(3);
   game.guess(3);
   assert.isTrue(game.isSolved());
-})
+});
+
+it('returns false if the game is not solved', function () {
+  game = new guessingGame(3);
+  game.guess(5);
+  assert.isFalse(game.isSolved());
+});
