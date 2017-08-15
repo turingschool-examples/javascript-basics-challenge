@@ -30,3 +30,13 @@ describe('median functionality', function () {
     assert.deepEqual(median([1, 2, 4, 2, 3]), 2);
   });
 });
+
+describe('mode functionality', function () {
+  it('is a function', function() {
+    assert.isFunction(mode, 'this is a function');
+  });
+
+  it('can return an object', function () {
+    assert.instanceOf(mode([1, 2, 4, 2, 3]), Object);
+  });
+});
