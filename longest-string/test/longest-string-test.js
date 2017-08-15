@@ -12,8 +12,8 @@ describe("It can find the longest string", function() {
     assert.equal(myLongest.findLongest([]), null);
   })
 
-  // it("returns an error if any of the values is not a number", function() {
-    // var myLongest = new longestString;
-  //   assert.equal(myLongest.findLongest(['Boudi', 'kitty', 5]));
-  // })
+  it("returns an error if any of the values is not a number", function() {
+    var myLongest = new longestString;
+    assert.equal(myLongest.findLongest(['Boudi', 'kitty', 5]), "This only works with words.");
+  })
 })
