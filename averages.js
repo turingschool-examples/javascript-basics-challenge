@@ -34,8 +34,18 @@ function mode(array) {
 	    if (mapping[array[i]] == undefined) mapping[array[i]] = 0;
 	    mapping[array[i]] += 1
 	}
-	let greatest = _.max(_.keys(mapping), function(o){return object[o]; });
-	return greatest;
+	mappingKeys = Object.keys(mapping);
+	var greatestValue = 0;
+	var greatestKey = 0;
+	for(var j = 0; j < mappingKeys.length; j++) {
+		if(mapping[mappingKeys[j]] > greatestValue) {
+			greatestValue = mapping[mappingKeys[j]];
+			greatestKey = mappingKeys[j];
+		}
+	}
+	var greatestHash = {};
+	greatestHash[greatestKey] = greatestValue
+	return greatestHash;
 }
 
 module.exports = {total, mean, median, mode}

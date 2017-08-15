@@ -18,6 +18,6 @@ describe('the median function', function() {
 })
 describe('the mode function', function() {
 	it('can return the mode of the array', function() {
-		assert.equal(Averages.mode([34, 3, 23, 14, 28, 23, 28, 23, 98]), {23: 3} );	
+		assert.deepEqual(Averages.mode([34, 3, 23, 14, 28, 23, 28, 23, 98]), {23: 3} );	
 	})
 })
