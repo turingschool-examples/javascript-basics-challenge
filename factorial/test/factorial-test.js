@@ -1,4 +1,5 @@
 var assert = require('chai').assert;
+var factorial = require('../factorial.js')
 
 describe('find factorials', function() {
   it('can find the factorial of a positive number', function() {
