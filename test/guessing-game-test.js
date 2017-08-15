@@ -6,6 +6,11 @@ it('returns too high when the guess is larger than answer', function () {
   assert.deepEqual(game.guess(5), "Too high!");
 });
 
+it('returns too low when the guess is lower than answer', function () {
+  game = new guessingGame(13);
+  assert.deepEqual(game.guess(2), "Too low!");
+});
+
 // it('returns true when the game is solved', function () {
 //   game = new guessingGame(1);
 //   game.guess(1);
