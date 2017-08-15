@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-const rectangles = require('../rectangles')
+const rectangles = require('../lib/rectangles')
 
 
 describe('functions can return different rectangle properties', function() {
