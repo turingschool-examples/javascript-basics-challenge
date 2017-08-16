@@ -20,4 +20,11 @@ describe("it knows if it is a real triangle", function() {
     assert.equal(makeTriangle.theTriangle(1,-1,1), "A triangle cannot have negative side!")
     assert.equal(makeTriangle.theTriangle(1,1,-1), "A triangle cannot have negative side!")
   })
+
+  it("ensures a triangle cannot have zero for a side", function(){
+    var makeTriangle = new isTriangle;
+    assert.equal(makeTriangle.theTriangle(0,1,1), "A triangle cannot have a missing side!")
+    assert.equal(makeTriangle.theTriangle(1,0,1), "A triangle cannot have a missing side!")
+    assert.equal(makeTriangle.theTriangle(1,1,0), "A triangle cannot have a missing side!")
+  })
 })
