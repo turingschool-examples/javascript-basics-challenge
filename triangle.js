@@ -6,6 +6,9 @@ class isTriangle {
     else if (this.isNegative(side1, side2, side3)) {
       return "A triangle cannot have negative side!";
     }
+    else if (this.isEquilateral(side1, side2, side3)) {
+      return "This is an equilateral triangle"
+    }
   }
 
   isZero(side1, side2, side3) {
@@ -25,4 +28,15 @@ class isTriangle {
       return false;
     }
   }
+
+  isEquilateral(side1, side2, side3) {
+    if (side1 === side2 ===side3) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  
 }
