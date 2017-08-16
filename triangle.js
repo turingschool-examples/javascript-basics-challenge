@@ -7,7 +7,13 @@ class isTriangle {
       return "A triangle cannot have negative side!";
     }
     else if (this.isEquilateral(side1, side2, side3)) {
-      return "This is an equilateral triangle"
+      return "This is an equilateral triangle";
+    }
+    else if (this.isRight(side1, side2, side3)) {
+      return "This is a proper right triangle!";
+    }
+    else {
+      return false;
     }
   }
 
@@ -38,5 +44,21 @@ class isTriangle {
     }
   }
 
-  
+  isRight(side1, side2, side3) {
+    if (this.theTheorum(side1, side2, side3) || this.theTheorum(side1, side3, side2) || this.theTheorum(side2, side3, side1)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  theTheorum(a, b, c) {
+    if ((a * a) + (b * b) === (c * c)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 }
