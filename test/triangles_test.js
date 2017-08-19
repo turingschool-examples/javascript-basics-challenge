@@ -24,20 +24,28 @@ describe('With a suite of geometric functions', function() {
     var actual = triangle.isTriangle()
     var expected = "false, because a triangle can't have 0 length sides"
 
+    assert.equal(actual, expected)
+
     triangle1 = new Triangle(3, 0, 3)
 
     var actual = triangle1.isTriangle()
     var expected = "false, because a triangle can't have 0 length sides"
+
+    assert.equal(actual, expected)
 
     triangle2 = new Triangle(0, 3, 3)
 
     var actual = triangle2.isTriangle()
     var expected = "false, because a triangle can't have 0 length sides"
 
+    assert.equal(actual, expected)
+
     triangle3 = new Triangle(3, 3, 0)
 
     var actual = triangle3.isTriangle()
     var expected = "false, because a triangle can't have 0 length sides"
+
+    assert.equal(actual, expected)
   })
 
   it('can determine if it is not a triangle because of negagtive lengths', function() {
@@ -46,6 +54,18 @@ describe('With a suite of geometric functions', function() {
 
     var actual = triangle.isTriangle()
     var expected = "false, because a triangle can't have negative length sides"
+
+    assert.equal(actual, expected)
+  })
+
+  it('can determine if it is a right triangle', function() {
+
+    triangle = new Triangle(6,8,10)
+
+    var actual = triangle.isTriangle()
+    var expected = "true, a right triangle"
+
+    assert.equal(actual, expected)
   })
 
 })
