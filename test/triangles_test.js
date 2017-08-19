@@ -17,4 +17,35 @@ describe('With a suite of geometric functions', function() {
     assert.equal(actual, expected)
   })
 
+  it('can determine if it is not a triangle because of 0 length sides', function() {
+
+    triangle = new Triangle(0, 0, 0)
+
+    var actual = triangle.isTriangle()
+    var expected = "false, because a triangle can't have 0 length sides"
+
+    triangle1 = new Triangle(3, 0, 3)
+
+    var actual = triangle1.isTriangle()
+    var expected = "false, because a triangle can't have 0 length sides"
+
+    triangle2 = new Triangle(0, 3, 3)
+
+    var actual = triangle2.isTriangle()
+    var expected = "false, because a triangle can't have 0 length sides"
+
+    triangle3 = new Triangle(3, 3, 0)
+
+    var actual = triangle3.isTriangle()
+    var expected = "false, because a triangle can't have 0 length sides"
+  })
+
+  it('can determine if it is not a triangle because of negagtive lengths', function() {
+
+    triangle = new Triangle(-2,1,5)
+
+    var actual = triangle.isTriangle()
+    var expected = "false, because a triangle can't have negative length sides"
+  })
+
 })
