@@ -24,4 +24,13 @@ describe('With a suite of geometric functions', function() {
     assert.equal(actual, expected)
 
   })
+
+  it('can determine if rectangle is a square', function() {
+    var square = {width: 10, length: 10}
+    var notSquare = {width: 10, length: 20}
+
+    assert.equal(rectangleFile.isSquare(notSquare), false)
+    assert.equal(rectangleFile.isSquare(square), true)
+
+  })
 })
