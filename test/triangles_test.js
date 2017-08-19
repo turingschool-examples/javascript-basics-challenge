@@ -68,4 +68,34 @@ describe('With a suite of geometric functions', function() {
     assert.equal(actual, expected)
   })
 
+  it('can determine a right triangle given in any order', function() {
+    var x = 3
+    var y = 4
+    var z = 5
+
+    triangle = new Triangle(x, y, z)
+    triangle2 = new Triangle(x, z, y)
+    triangle3 = new Triangle(y, x, z)
+    triangle4 = new Triangle(y, z, x)
+    triangle5 = new Triangle(z, x, y)
+    triangle6 = new Triangle(z, y, x)
+
+    var actual = triangle.isTriangle()
+    var actual2 = triangle2.isTriangle()
+    var actual3 = triangle3.isTriangle()
+    var actual4 = triangle4.isTriangle()
+    var actual5 = triangle5.isTriangle()
+    var actual6 = triangle6.isTriangle()
+
+    var expected = "true, a right triangle"
+
+    assert.equal(actual, expected)
+    assert.equal(actual2, expected)
+    assert.equal(actual3, expected)
+    assert.equal(actual4, expected)
+    assert.equal(actual5, expected)
+    assert.equal(actual6, expected)
+
+  })
+
 })
