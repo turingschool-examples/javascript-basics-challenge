@@ -19,5 +19,13 @@ describe('Average numbers suite', function() {
     assert.equal(actual, expected)
   })
 
+  it('can find the median of the numbers in the array', function() {
+    var expected = 3
+    var actual = averages.median(array)
+
+    assert.equal(actual, expected)
+  })
+
+
 })
 
