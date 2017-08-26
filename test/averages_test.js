@@ -3,10 +3,10 @@ const averages = require('../lib/averages')
 
 describe('Average numbers suite', function() {
 
-  var array = [1, 2, 3, 4, 5]
+  var array = [1, 2, 3, 4, 5, 3]
 
   it('can add all the numbers in an array', function() {
-    var expected = 15
+    var expected = 18
     var actual = averages.total(array)
 
     assert.equal(actual, expected)
@@ -25,7 +25,6 @@ describe('Average numbers suite', function() {
 
     assert.equal(actual, expected)
   })
-
 
 })
 
