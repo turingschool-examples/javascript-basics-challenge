@@ -21,15 +21,13 @@ function median(numbers) {
 function mode(numbers) {
   mapping = {};
   for (let i = 0; i < numbers.length; i++) {
-    if (!mapping[numbers[i]]) {
-      mapping[numbers[i]] = 0;
-    } else {
-      mapping[numbers[i]] += 1;
-    };
+    (mapping[numbers[i]]) ? mapping[numbers[i]] += 1 : mapping[numbers[i]] = 1;
   };
-  let arr = Object.values(mapping);
+  let arr = Object.keys(mapping).map(function(key) {
+    return mapping[key];
+  });
   let max = Math.max(...arr);
-  return Object.keys(mapping).find(key => object[key] === max);
+  return parseInt(Object.keys(mapping).find(key => mapping[key] === max));
 };
 
 module.exports = {
