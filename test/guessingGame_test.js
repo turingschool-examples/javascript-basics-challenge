@@ -1,17 +1,6 @@
 const assert = require('chai').assert;
 const expect = require('chai').expect;
-const guessingGame = require('../guessingGame');
-
-var game = new GuessingGame(20);
-
-game.isSolved();   // => false
-
-game.guess(5);     // => 'low'
-game.guess(40);    // => 'high'
-game.isSolved();   // => false
-
-game.guess(20);    // => 'correct'
-game.isSolved()    // => true
+const GuessingGame = require('../guessingGame');
 
 describe("guessing game unit tests", function(){
   context("object constructor object test", function(){
@@ -24,7 +13,7 @@ describe("guessing game unit tests", function(){
     var game = new GuessingGame(20);
     it("is not initially solved", function(){
       assert.equal(false, game.isSolved())
-    }
+    })
     it("low guesses return 'low'", function(){
       assert.equal('low', game.guess(5))
     })
