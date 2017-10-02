@@ -1,5 +1,3 @@
-var pry = require('pryjs');
-
 function diagonal(rectangle){
   var sideA = rectangle.width;
   var sideB = rectangle.height;

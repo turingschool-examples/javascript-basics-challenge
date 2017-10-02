@@ -8,6 +8,6 @@ describe("is object a triangle test", function(){
     assert.isFalse(isTriangle(1,4,0));
   })
   it("returns false if any of the sides are negative", function(){
-
+    assert.isFalse(isTriangle(1,3,-2));
   })
 });
