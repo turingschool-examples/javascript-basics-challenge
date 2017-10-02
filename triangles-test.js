@@ -22,7 +22,7 @@ describe('isTriangle will evaluate a triangle', function() {
 
   context('when given a negative number', function() {
     it('will return false', function() {
-      assert.equal(, false);
+      assert.equal(isTriangle(-2,1,5), false);
     })
   })
 })
