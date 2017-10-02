@@ -15,4 +15,7 @@ describe("is object a triangle test", function(){
   it("knows an equilateral triangle when it sees one", function(){
     assert.equal("true, this is an equilateral triangle", isTriangle(4,4,4))
   })
+  it("knows a right-angle triangle when it sees one", function(){
+    assert.equal("true, a right triangle!", isTriangle(3,4,5));
+  })
 });
