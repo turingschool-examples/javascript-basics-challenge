@@ -12,7 +12,7 @@ describe('Rectangles Methods', function() {
     assert.isFunction(Rectangles);
     assert.isObject(new Rectangles(rectangle))
     assert.equal(200, expected)
-  });
+  })
 
   it("returns a different rectangles correct area", function() {
     var rectangle = {width: 1, height: 400}
@@ -39,13 +39,34 @@ describe('Rectangles Methods', function() {
     var rectangle = {width: 10, height: 20}
     var expected = rectangles.diaganol(rectangle)
 
-    assert.equal(22.36, expected)
+    assert.equal(22.360679774997898, expected)
   })
 
-  it.skip("returns the correct different rectangles perimeter", function() {
-    var rectangle = {width: 40, height: 50}
-    var expected = rectangles.perimeter(rectangle)
+  it("returns the correct different rectangles diaganol", function() {
+    var rectangle = {width: 6, height: 8}
+    var expected = rectangles.diaganol(rectangle)
 
-    assert.equal(180, expected)
+    assert.equal(10, expected)
+  })
+
+  it("returns the correct true for isSquare", function() {
+    var rectangle = {width: 6, height: 6}
+    var expected = rectangles.isSquare(rectangle)
+
+    assert(expected)
+  })
+
+  it("returns the correct true for isSquare for different rectangle", function() {
+    var rectangle = {width: 10, height: 10}
+    var expected = rectangles.isSquare(rectangle)
+
+    assert(expected)
+  })
+
+  it("returns the correct false for isSquare", function() {
+    var rectangle = {width: 6, height: 8}
+    var expected = rectangles.isSquare(rectangle)
+
+    assert.isFalse(expected)
   })
 })
