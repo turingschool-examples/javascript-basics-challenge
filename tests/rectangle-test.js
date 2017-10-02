@@ -19,3 +19,10 @@ describe("it tests rectangle", function() {
   });
 });
 
+
+describe("it tests rectangle", function() {
+  it("returns the rect", function() {
+    assert.deepEqual(rectangle.isSquare({width: 4, height: 4}), true);
+  });
+});
+
