@@ -1,11 +1,18 @@
 const assert = require('chai').assert
-const area = require('../rectangle')
+const rectangle = require('../rectangle')
 
 describe('rectangle functions', function() {
   context('with area', function() {
     it('it can calculate area', function() {
-      var rectangle = {width: 5, height: 6}
-      assert.equal(area(rectangle), 30)
+      var rec = {width: 5, height: 6}
+      assert.equal(rectangle.area(rec), 30)
+    })
+  })
+
+  context('with perimeter', function() {
+    it('it can calculate perimter', function() {
+      var rec = {width: 4, height: 2}
+      assert.equal(rectangle.perimeter(rec), 12)
     })
   })
 })
