@@ -23,4 +23,16 @@ function median(array) {
   }
 }
 
-module.exports = {total, mean, median}
+function mode(array) {
+  var modeCounts = new Object()
+  array.forEach(function (num) {
+      if (num in modeCounts) {
+          modeCounts[num] += 1;
+      } else {
+          modeCounts[num] = 1;
+      }
+  });
+  return modeCounts;
+}
+
+module.exports = {total, mean, median, mode}

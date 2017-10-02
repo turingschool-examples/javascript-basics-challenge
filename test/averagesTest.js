@@ -27,4 +27,11 @@ describe('test averages', function () {
       assert.equal(averages.median(array), 2)
     })
   })
+
+  context('testing modes', function() {
+    it('returns the modes', function() {
+      array = new Array(1, 1, 2)
+      assert.deepEqual(averages.mode(array), {'1': 2, '2': 1})
+    })
+  })
 })
