@@ -13,8 +13,13 @@ describe('rectangles functions', function () {
         assert.equal(rectangles.perimeter(rectangle), 60)
     });
 
-    it('cant return the diagonal of the rectangle', function () {
+    it('can return the diagonal of the rectangle', function () {
         let rectangle = {width: 10, height: 20};
         assert.equal(rectangles.diagonal(rectangle), 22.360679774997898)
     });
+
+    it('returns true if rectangle is square', function () {
+        let rectangle = {width: 10, height: 20};
+        assert.isFalse(rectangles.isSquare(rectangle))
+    })
 });

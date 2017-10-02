@@ -8,12 +8,15 @@ function perimeter(rectangle) {
 }
 
 function diagonal(rectangle) {
-    return Math.sqrt(rectangle.width ** 2 + rectangle.height ** 2);
+    return Math.sqrt(Math.pow(rectangle.width, 2) + Math.pow(rectangle.height, 2))
 }
 
-
+function isSquare(rectangle) {
+    return rectangle.width === rectangle.height
+}
 module.exports = {
     area,
     perimeter,
-    diagonal
+    diagonal,
+    isSquare
 };
