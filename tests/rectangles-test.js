@@ -13,4 +13,10 @@ describe("it tests rectangles", function() {
   it("returns the diagonal", function() {
     assert.deepEqual(rectangle.diagonal({width: 3, height: 4}), 5);
   });
+
+  it("returns if is a square", function() {
+    assert.deepEqual(rectangle.isSquare({width: 3, height: 4}), false);
+    assert.deepEqual(rectangle.isSquare({width: 3, height: 3}), true);
+    assert.deepEqual(rectangle.isSquare({width: 4, height: 4}), true);
+  });
 });
