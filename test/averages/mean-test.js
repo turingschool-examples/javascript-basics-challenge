@@ -1,9 +1,9 @@
 const assert = require('chai').assert
 const mean = require('../../lib/averages/mean.js')
 
-describe('isRightTriangle functionality', function() {
-  context('isRightTriangle function', function(){
-    it('it can determine if 3 sides could exist in a right triangle', function(){
+describe('mean functionality', function() {
+  context('mean function', function(){
+    it('it can determine the average of an array of numbers', function(){
       let toBeAveraged = [2,3,4,1,3,5];
       let answer = mean(toBeAveraged);
 
