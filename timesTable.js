@@ -1,5 +1,3 @@
-pry = require('pryjs');
-
 function timesTable(integer){
   var factorialIntegers = []
   for(var i = 1; i < integer + 1; i++){
@@ -14,4 +12,4 @@ function timesTable(integer){
   }
 };
 
-timesTable(9);
+module.exports = timesTable
