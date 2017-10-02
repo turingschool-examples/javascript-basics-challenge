@@ -3,14 +3,14 @@
 In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:
 
 * Fork this repository
-* As you work through each section below, add a file (named according to what exercise you're on). 
+* As you work through each section below, add a file (named according to what exercise you're on).
 * Complete the exercise by writing your JS code and corresponding unit tests.
 * **When you finish, create a Pull Request back to this repository with your completed challenge!**
 * If you have questions, please tag an instructor in your PR.
 
 ### 1. Rectangles
 
-You'll write a number of functions that calculate certain properies of a rectangle object. A rectangle object is just a JavaScript object with two properties - a `width` and a `height`. The input will look like this:
+You'll write a number of functions that calculate certain properties of a rectangle object. A rectangle object is just a JavaScript object with two properties - a `width` and a `height`. The input will look like this:
 
 ```javascript
 var rectangle = {width: 10, height: 20}
