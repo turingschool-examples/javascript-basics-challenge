@@ -9,5 +9,9 @@ describe("longest string function test", function(){
       assert.equal("pineapples", longestString(stringArray));
       assert.equal("jennifer", longestString(secondArray));
     })
+    it("returns NULL for empty array", function(){
+      var emptyArray = []
+      assert.isNull(longestString(emptyArray))
+    })
   });
 });
