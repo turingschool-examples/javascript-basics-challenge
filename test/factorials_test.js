@@ -9,5 +9,6 @@ describe("factorials tests", function(){
   })
   it("calculates factorial correctly for positive integers", function(){
     expect(factorial(4)).to.equal(24);
+    assert.equal(120, factorial(5));
   })
 });
