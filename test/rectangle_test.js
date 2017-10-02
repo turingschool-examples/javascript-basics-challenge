@@ -1,9 +1,9 @@
 const assert = require('chai').assert;
 const expect = require('chai').expect;
-const area = require("../area");
-const diagonal = require("../diagonal");
-const isSquare = require("../isSquare");
-const perimeter = require("../perimeter");
+const area = require("../rectangles/area");
+const diagonal = require("../rectangles/diagonal");
+const isSquare = require("../rectangles/isSquare");
+const perimeter = require("../rectangles/perimeter");
 
 describe("rectangle function tests", function(){
   context("area", function(){
