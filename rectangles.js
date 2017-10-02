@@ -7,7 +7,13 @@ function perimeter(rectangle) {
     return (rectangle.width + rectangle.height) * 2;
 }
 
+function diagonal(rectangle) {
+    return Math.sqrt(rectangle.width ** 2 + rectangle.height ** 2);
+}
+
+
 module.exports = {
     area,
-    perimeter
+    perimeter,
+    diagonal
 };
