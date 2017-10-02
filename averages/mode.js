@@ -17,4 +17,4 @@ var mode = function(arr){
     return mode;
 }
 
-module.exports = mode;
+module.exports = mode
