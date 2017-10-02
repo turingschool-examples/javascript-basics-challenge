@@ -18,6 +18,21 @@ describe('timesTable functionality', function() {
       answer = timesTable(number);
 
       assert.equal(answer, "1 2 3 /n2 4 6 /n3 6 9 /n")
+
+      number = 0;
+      answer = timesTable(number);
+
+      assert.equal(answer, null)
+
+      number = 1;
+      answer = timesTable(number);
+
+      assert.equal(answer, "1 /n")
+
+      number = 4;
+      answer = timesTable(number);
+
+      assert.equal(answer, "1 2 3 4 /n2 4 6 8 /n3 6 9 12 /n4 8 12 16 /n")
     })
   })
 })
