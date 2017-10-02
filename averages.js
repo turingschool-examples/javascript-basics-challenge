@@ -11,8 +11,16 @@ function mean(numbers) {
   return total / numbers.length;
 };
 
+function median(numbers) {
+  let sortedArray = numbers.sort(function(a,b) {
+    return a - b;
+  });
+  return sortedArray[Math.floor(numbers.length / 2)];
+};
+
 module.exports = {
   total: total,
-  mean: mean
+  mean: mean,
+  median: median,
 
 }
