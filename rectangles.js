@@ -4,7 +4,10 @@ function area(rectangle) {
 }
 
 function perimeter(rectangle) {
-    return
+    return (rectangle.width + rectangle.height) * 2;
 }
-// console.log(area(rectangle));
-module.exports = { area };
+
+module.exports = {
+    area,
+    perimeter
+};

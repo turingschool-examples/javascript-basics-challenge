@@ -8,5 +8,10 @@ describe('rectangles functions', function () {
         let rectangle = {width: 10, height: 20};
         // eval(pry.it);
         assert.equal(rectangles.area(rectangle), 200)
+    });
+
+    it('can return the perimeter of the rectangle', function () {
+        let rectangle = {width: 10, height: 20};
+        assert.equal(rectangles.perimeter(rectangle), 60)
     })
 });
