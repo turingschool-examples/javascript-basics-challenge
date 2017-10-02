@@ -15,4 +15,11 @@ describe('rectangle functions', function() {
       assert.equal(rectangle.perimeter(rec), 12)
     })
   })
+
+  context('with diagonal', function() {
+    it('it can calculate diagonal', function() {
+      var rec = {width: 4, height: 3}
+      assert.equal(rectangle.diagonal(rec), 5)
+    })
+  })
 })

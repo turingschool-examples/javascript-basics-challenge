@@ -9,4 +9,10 @@ function perimeter(rectangle) {
   return (rectangle.width * 2) + (rectangle.height * 2);
 }
 
-module.exports = {area, perimeter}
+function diagonal(rectangle) {
+  var widthSquared = (rectangle.width * rectangle.width)
+  var heightSquared = (rectangle.height * rectangle.height)
+  return Math.sqrt(widthSquared + heightSquared);
+}
+
+module.exports = {area, perimeter, diagonal}
