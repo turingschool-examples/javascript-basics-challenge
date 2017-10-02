@@ -2,12 +2,50 @@ const assert = require('chai').assert
 const Rectangles = require('../lib/rectangles')
 
 describe('Rectangles Methods', function() {
+  var rectangles = new Rectangles();
+
   it("returns the correct area", function() {
     var rectangle = {width: 10, height: 20}
-    var expected = Rectangles.area(rectangle)
-    
+    var expected = rectangles.area(rectangle)
+
+
     assert.isFunction(Rectangles);
     assert.isObject(new Rectangles(rectangle))
-    assert.equal(200, )
+    assert.equal(200, expected)
+  });
+
+  it("returns a different rectangles correct area", function() {
+    var rectangle = {width: 1, height: 400}
+    var expected = rectangles.area(rectangle)
+
+    assert.equal(400, expected)
+  })
+
+  it("returns the correct perimeter", function() {
+    var rectangle = {width: 10, height: 20}
+    var expected = rectangles.perimeter(rectangle)
+
+    assert.equal(60, expected)
+  })
+
+  it("returns the correct different rectangles perimeter", function() {
+    var rectangle = {width: 40, height: 50}
+    var expected = rectangles.perimeter(rectangle)
+
+    assert.equal(180, expected)
+  })
+
+  it("returns the correct diaganol of a rectangle", function() {
+    var rectangle = {width: 10, height: 20}
+    var expected = rectangles.diaganol(rectangle)
+
+    assert.equal(22.36, expected)
+  })
+
+  it.skip("returns the correct different rectangles perimeter", function() {
+    var rectangle = {width: 40, height: 50}
+    var expected = rectangles.perimeter(rectangle)
+
+    assert.equal(180, expected)
   })
 })
