@@ -1,6 +1,8 @@
 function total(numbers) {
-  return "it works!"
-}
+  return numbers.reduce(function(a,b) {
+    return a + b;
+  });
+};
 
 module.exports = {
   total: total
