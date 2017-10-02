@@ -5,10 +5,9 @@ function timesTable(number) {
       let num = i * j;
       output = output.concat(" " + num.toString());
     };
-   output = output.concat("\n");
+    output = output.concat("\n");
   };
   return output;
-  console.log('test');
 };
 
 console.log(timesTable(5));
