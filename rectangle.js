@@ -15,4 +15,12 @@ function diagonal(rectangle) {
   return Math.sqrt(widthSquared + heightSquared);
 }
 
-module.exports = {area, perimeter, diagonal}
+function isSquare(rectangle) {
+  if (rectangle.width == rectangle.height) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+module.exports = {area, perimeter, diagonal, isSquare}

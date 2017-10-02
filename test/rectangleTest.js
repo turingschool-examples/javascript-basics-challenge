@@ -22,4 +22,16 @@ describe('rectangle functions', function() {
       assert.equal(rectangle.diagonal(rec), 5)
     })
   })
+
+  context('with isSquare', function() {
+    it('it returns true if w and h are qual', function() {
+      var rec = {width: 5, height: 5}
+      assert.equal(rectangle.isSquare(rec), true)
+    })
+
+    it('it returns false if w and h are not equal', function() {
+      var rec = {width: 5, height: 4}
+      assert.equal(rectangle.isSquare(rec), false)
+    })
+  })
 })
