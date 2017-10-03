@@ -21,5 +21,11 @@ describe('Guessing game constructor function', function () {
     it('returns Correct when guess === answer', function () {
         let game = new GuessingGame(10);
         assert.equal(game.guess(10), 'Correct')
+    });
+
+    it('returns true when solved', function() {
+        let game = new GuessingGame(10);
+        game.guess(10);
+        assert.isTrue(game.isSolved());
     })
 });
