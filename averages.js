@@ -1,7 +1,8 @@
 function total(arr) {
-  arr.reduce(function(sum, value) {
-    return sum + value
-  }, 0)
+  var tote = arr.reduce(function (sum, value) {
+    return sum + value;
+  }, 0);
+  return tote;
 }
 
 function mean(arr) {
@@ -11,24 +12,16 @@ function mean(arr) {
 }
 
 function median(arr) {
-
+  // cannot get this fucker to work!
+  var midPoint = Math.floor(arr.length);
+  var med = arr.sort(function (a,b) {
+    return a-b;
+  })[midPoint];
+  return med;
 }
 
 function mode(arr) {
-  
 }
-
-// .sort(function(a, b){return a-b})
-
-
-
-
-// Write a function for each of the following. Each function will take an Array as the one argument..
-//
-// 1. `total` - returns the total of all the values in the array
-// 2. `mean` - returns the mean (average) of the array
-// 3. `median` - returns the median of the array
-// 4. `mode`- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
 
 module.exports = {
   total,
