@@ -49,6 +49,13 @@ describe('Rectangles Methods', function() {
     assert.equal(10, expected)
   })
 
+  it("returns the correct different rectangles diaganol", function() {
+    var rectangle = {width: 6, height: 8}
+    var expected = rectangles.diaganol(rectangle)
+
+    assert.equal(, expected)
+  })
+
   it("returns the correct true for isSquare", function() {
     var rectangle = {width: 6, height: 6}
     var expected = rectangles.isSquare(rectangle)
