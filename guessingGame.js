@@ -1,14 +1,17 @@
 function GuessingGame(number) {
-  this.isSolved = false;
+  this.flag = false;
+  this.isSolved = function() {
+    return this.flag;
+  };
   this.guess = function(guess) {
     if (guess === number) {
-      this.isSolved = true;
+      this.flag = true;
       return "correct";
     } else if (guess > number) {
-      this.isSolved = false;
+      this.flag = false;
       return "high";
     } else if (guess < number) {
-      this.isSolved = false;
+      this.flag = false;
       return "low";
     };
   };
