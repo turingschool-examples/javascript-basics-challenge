@@ -7,8 +7,12 @@ function guessingGame() {
     function guess(number) {
       if (number == randomNumber) {
         return true;
+      } else if (number > randomNumber) {
+        console.log("high")
+        return false;
       } else {
-        return guess(number);
+        console.log("low")
+        return false;
       }
     }
   }
