@@ -1,6 +1,3 @@
-// let pry = require('pryjs');
-//
-// answer = 10;
 function GuessingGame(answer) {
     this.answer = answer;
     this.solved = false;
@@ -21,6 +18,5 @@ function GuessingGame(answer) {
     }
 }
 
-// console.log(GuessingGame(5));
 module.exports = GuessingGame;
-    // eval(pry.it);
+
