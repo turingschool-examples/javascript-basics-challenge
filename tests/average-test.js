@@ -20,3 +20,10 @@ describe("it tests rectangle", function() {
     assert.deepEqual(average.median([1,2,3]), 2);
   });
 });
+
+
+describe("it tests rectangle", function() {
+  it("returns the rect", function() {
+    assert.deepEqual(average.mode([1,2,2,2,3]), 2);
+  });
+});

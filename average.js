@@ -13,8 +13,25 @@ function median(array){
   return (array[lowMiddle] + array[highMiddle]) / 2
 };
 
+function mode(arr){
+  var mode = 0;
+  var count = 0;
+  for(var i = 0; i < arr.length; i++){
+    for(var j = 0; j < i; j++){
+      if(arr[j] === arr[i]){
+        mode = arr[j];
+        count++;
+        console.log(count);
+      }
+    }
+  }
+  return mode;
+}
+
+
 module.exports = {
   total: total,
   mean: mean,
-  median: median
+  median: median,
+  mode: mode
 }
