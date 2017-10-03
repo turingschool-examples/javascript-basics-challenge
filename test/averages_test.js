@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
-const total   = require('../averages').total
+const total  = require('../averages').total
 const mean   = require('../averages').mean
-const median   = require('../averages').median
+const median = require('../averages').median
 const mode   = require('../averages').mode
 
 
