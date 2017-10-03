@@ -1,4 +1,4 @@
-const assert    = require('chai').assert
+const assert = require('chai').assert
 const factorial = require('./factorial')
 
 describe('factorial will find the factorial', function() {
