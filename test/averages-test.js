@@ -22,4 +22,14 @@ describe('averages', function() {
       assert.deepEqual(expectedMean ,mean , "mean is computed correctly");
     });
   });
+  describe('median', function() {
+    it('should return the median of the array', function() {
+      var array = [20,20,20,50,50]
+
+      var expectedMedian = 20
+      var median = averagesFunctions.median(array)
+
+      assert.deepEqual(expectedMedian, median, "median is computed correctly");
+    });
+  });
 });
