@@ -63,4 +63,16 @@ describe('Triangle', function() {
       assert.equal(false, isTriangle(1,1,-1));
     });
   });
+  
+  describe('#isTriangle()', function() {
+    it('should return false if a side is equal to the other sides together', function(){
+      assert.equal(false, isTriangle(1,1,2));
+    });
+  });
+  
+  describe('#isTriangle()', function() {
+    it('should return false if a side is greater to the other sides together', function(){
+      assert.equal(false, isTriangle(1,1,10));
+    });
+  });
 });
