@@ -1,10 +1,12 @@
 var Methods = require('./rectangle');
 var TriangleStuff = require('./triangle');
+var Averages = require('./averages');
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
 var isSquare = Methods.isSquare;
 var isTriangle = TriangleStuff.isTriangle;
+var total = Averages.total;
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -79,6 +81,17 @@ describe('Triangle', function() {
   describe('#isTriangle()', function() {
     it('should return true if all the sides are the same', function(){
       assert.equal(true, isTriangle(1,1,1));
+    });
+  });
+});
+
+describe('Averages', function() {
+  describe('#total()', function() {
+    it('should return a number from a single number array', function(){
+      assert.equal(1, total([1]));
+    });
+    it('should return a the sum from a number array', function(){
+      assert.equal(6, total([1,2,3]));
     });
   });
 });
