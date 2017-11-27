@@ -1,6 +1,7 @@
 var Methods = require('./rectangle');
 var TriangleStuff = require('./triangle');
 var Averages = require('./averages');
+var Factorial = require('./factorial');
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
@@ -10,6 +11,7 @@ var total = Averages.total;
 var mean = Averages.mean;
 var median = Averages.median;
 var mode = Averages.mode;
+var factorial = Factorial.factorial
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -127,6 +129,20 @@ describe('Averages', function() {
     });
     it('should return the "lower" mode from an even (count) array', function(){
       assert.equal(3, mode([1,1,2,3,3,3]));
+    });
+  });
+});
+
+describe('Factorial', function() {
+  describe('#factorial()', function() {
+    it('should return 1', function(){
+      assert.equal(1, factorial(0));
+    });
+    it('should return a factorial', function(){
+      assert.equal(1, factorial(1));
+    });
+    it('should return a the factorial', function(){
+      assert.equal(6, factorial(3));
     });
   });
 });
