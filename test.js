@@ -1,8 +1,10 @@
 var Methods = require('./rectangle');
+var TriangleStuff = require('./triangle');
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
 var isSquare = Methods.isSquare;
+var isTriangle = TriangleStuff.isTriangle;
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -41,6 +43,24 @@ describe('Rectangle', function() {
     it('should return true if rectangle is a square', function(){
       var rectangle = {width: 5, height: 5}
       assert.equal(true, isSquare(rectangle));
+    });
+  });
+});
+
+describe('Triangle', function() {
+  describe('#isTriangle()', function() {
+    it('should return false if any of the sides are 0', function(){
+      assert.equal(false, isTriangle(1,1,0));
+    });
+  });
+  describe('#isTriangle()', function() {
+    it('should return false if all of the sides are 0', function(){
+      assert.equal(false, isTriangle(0,0,0));
+    });
+  });
+  describe('#isTriangle()', function() {
+    it('should return false if any of the sides are negative', function(){
+      assert.equal(false, isTriangle(1,1,-1));
     });
   });
 });
