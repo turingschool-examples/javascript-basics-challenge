@@ -26,5 +26,20 @@ module.exports = {
     else{
       return input[Math.floor(input.length/2)]
     }
+  },
+  
+  mode: function(input){
+    var numMapping = {};
+    var greatestFreq = 0;
+    var mode;
+    input.forEach(function findMode(number) {
+        numMapping[number] = (numMapping[number] || 0) + 1;
+
+        if (greatestFreq < numMapping[number]) {
+            greatestFreq = numMapping[number];
+            mode = number;
+        }
+    });
+    return +mode;
   }
 }

@@ -8,7 +8,8 @@ var isSquare = Methods.isSquare;
 var isTriangle = TriangleStuff.isTriangle;
 var total = Averages.total;
 var mean = Averages.mean;
-var median = Averages.median
+var median = Averages.median;
+var mode = Averages.mode;
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -114,6 +115,18 @@ describe('Averages', function() {
     });
     it('should return the "lower" median from a even number array', function(){
       assert.equal(2, median([1,1,2,3,5,10]));
+    });
+  });
+  
+  describe('#mode()', function() {
+    it('should return a number from a single number array', function(){
+      assert.equal(1, mode([1]));
+    });
+    it('should return a the mode from an odd (count) array', function(){
+      assert.equal(1, mode([1,1,2,5,10]));
+    });
+    it('should return the "lower" mode from an even (count) array', function(){
+      assert.equal(3, mode([1,1,2,3,3,3]));
     });
   });
 });
