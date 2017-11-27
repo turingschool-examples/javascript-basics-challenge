@@ -22,4 +22,4 @@ describe("Rectangle Calculations", function() {
   it("can determine if square", function() {
     assert.deepEqual(isSquare(rectangle), false)
   })
-})
+});
