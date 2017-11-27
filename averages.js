@@ -17,5 +17,14 @@ module.exports = {
   
   mean: function mean(input){
     return total(input) / input.length;
+  },
+  
+  median: function(input){
+    if (input.length % 2 == 0){
+      return input[(input.length/2) - 1]
+    }
+    else{
+      return input[Math.floor(input.length/2)]
+    }
   }
 }
