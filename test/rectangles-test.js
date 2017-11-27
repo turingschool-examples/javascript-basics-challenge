@@ -48,9 +48,3 @@ describe('rectangle', function() {
     });
   });
 });
-
-
-// 1. `area(rectangle)` - returns the area of the rectangle
-// 2. `perimeter(rectangle)` - returns the perimeter of the rectangle
-// 3. `diagonal(rectangle)` - returns the length of the rectangle's diagonal
-// 4. `isSquare(rectangle)` - returns `true` if the rectangle is a square and `false` otherwise
