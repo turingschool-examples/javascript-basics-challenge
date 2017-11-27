@@ -29,4 +29,4 @@ describe("Triangle Determination", function() {
       assert.isFalse(isTriangle(4, 8, 50))
     })
   })
-});
+})
