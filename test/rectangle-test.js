@@ -1,4 +1,3 @@
-const pry = require('pryjs');
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 const rect = require('../lib/rectangle');
