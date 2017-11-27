@@ -2,6 +2,7 @@ var Methods = require('./rectangle');
 var TriangleStuff = require('./triangle');
 var Averages = require('./averages');
 var Factorial = require('./factorial');
+var Longest = require('./longestString')
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
@@ -11,7 +12,8 @@ var total = Averages.total;
 var mean = Averages.mean;
 var median = Averages.median;
 var mode = Averages.mode;
-var factorial = Factorial.factorial
+var factorial = Factorial.factorial;
+var longestString = Longest.longestString;
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -143,6 +145,24 @@ describe('Factorial', function() {
     });
     it('should return a the factorial', function(){
       assert.equal(6, factorial(3));
+    });
+  });
+});
+
+
+describe('Array', function() {
+  describe('#longestString()', function() {
+    it('should return a null for an empty array', function(){
+      assert.equal(null, longestString([]));
+    });
+    it('should return a string for an array with just one string', function(){
+      assert.equal("cat", longestString(["cat"]));
+    });
+    it('should the longest String', function(){
+      assert.equal("horse", longestString(["cat", "horse"]));
+    });
+    it('should return a the first of the longest Strings', function(){
+      assert.equal("llama", longestString(["llama","cat", "horse"]));
     });
   });
 });
