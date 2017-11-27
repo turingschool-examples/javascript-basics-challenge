@@ -32,4 +32,14 @@ describe('averages', function() {
       assert.deepEqual(expectedMedian, median, "median is computed correctly");
     });
   });
+  describe('mode', function() {
+    it('should return the mode of the array', function() {
+      var array = [20,20,20,50,50]
+
+      var expectedMode = 20
+      var mode = averagesFunctions.mode(array)
+
+      assert.deepEqual(expectedMode, mode, "mode is computed correctly");
+    });
+  });
 });
