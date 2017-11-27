@@ -75,4 +75,10 @@ describe('Triangle', function() {
       assert.equal(false, isTriangle(1,1,10));
     });
   });
+  
+  describe('#isTriangle()', function() {
+    it('should return true if all the sides are the same', function(){
+      assert.equal(true, isTriangle(1,1,1));
+    });
+  });
 });
