@@ -1,8 +1,3 @@
-
-// isTriangle(4,4,4) # => true, an equilateral triangle
-
-// isTriangle(4, 8, 50) #=> false, no such triangle exists
-
 const assert     = require('chai').assert
 const isTriangle = require('../triangles').isTriangle
 
