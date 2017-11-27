@@ -3,6 +3,7 @@ var TriangleStuff = require('./triangle');
 var Averages = require('./averages');
 var Factorial = require('./factorial');
 var Longest = require('./longestString')
+var Times = require('./timesTable')
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
@@ -14,6 +15,7 @@ var median = Averages.median;
 var mode = Averages.mode;
 var factorial = Factorial.factorial;
 var longestString = Longest.longestString;
+var timesTable = Times.timesTable;
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -163,6 +165,17 @@ describe('Array', function() {
     });
     it('should return a the first of the longest Strings', function(){
       assert.equal("llama", longestString(["llama","cat", "horse"]));
+    });
+  });
+});
+
+describe('Times Table', function() {
+  describe('#timesTable()', function() {
+    it('should print a times table for 1', function(){
+      assert.equal("1", timesTable(1));
+    });
+    it('should print a times table for 5', function(){
+      assert.equal("1,2,3\n2,4,6\n3,6,9", timesTable(3));
     });
   });
 });
