@@ -18,3 +18,6 @@ function GuessingGame(answer) {
     }
   }
 }
+
+
+module.exports = { GuessingGame }
