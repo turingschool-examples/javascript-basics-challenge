@@ -13,6 +13,10 @@ describe('Rectangle', function() {
       assert.equal(rectangle.perimeter(shape), 60);
     });
 
+    it('can find the diagnol', () => {
+      var shape = {width: 10, height: 20};
+      assert.equal(rectangle.diagnol(shape), 22.36);
+    });
 
 
 });
