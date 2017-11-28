@@ -24,17 +24,18 @@ exports.median = function(array) {
   }
 };
 
-// exports.mode = function(array) {
-//   var newHash = {}
-//
-//   for (i = 0; i < array.length; i++) {
-//     if (newHash[array[i]]) {
-//       newHash[array[i]] = value + 1
-//     }
-//     else {
-//       emptyHash[array[i]] = 1
-//     }
-//   }
-//   return newHash
-//   // find the max value of the given properties in the hash
-// };
+exports.mode = function(array) {
+  var newHash = {}
+
+  for (i = 0; i < array.length; i++) {
+    if (newHash[array[i]]) {
+      newHash[array[i]] += 1
+    }
+    else {
+      newHash[array[i]] = 1
+    }
+  }
+
+  return Number(Object.keys(newHash).reduce(function(a, b){ return newHash[a] > newHash[b] ? a : b }));
+
+};

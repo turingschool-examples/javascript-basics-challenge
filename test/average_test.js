@@ -13,9 +13,9 @@ describe("Average function thing", function() {
 
 
     expect(totalAverage).to.deep.equal(41);
-    expect(meanAverage).to.deep.equal(5.85714286);
+    expect(meanAverage).to.deep.equal(5.857142857142857);
     expect(medianAverage).to.deep.equal(10);
-    expect(modeAverage).to.deep.equal();
+    expect(modeAverage).to.deep.equal(2);
 
     });
   });
