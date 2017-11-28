@@ -21,6 +21,7 @@ describe("Averages Calculations", function() {
 
   it("can determine mode", function() {
     var modeNumset = [1, 1, 2, 2, 4, 5]
+    
     assert.deepEqual(mode(modeNumset), {"1": 2, "2": 2, "4": 1, "5": 1})
   })
 
