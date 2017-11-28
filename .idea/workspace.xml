@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc5cfc05-2965-4fd5-a9df-64fefad27c44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/longestString.js" afterPath="$PROJECT_DIR$/lib/longestString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/triangles.js" afterPath="$PROJECT_DIR$/lib/triangles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/timesTable.js" afterPath="$PROJECT_DIR$/lib/timesTable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/timesTables-test.js" afterPath="$PROJECT_DIR$/test/timesTables-test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,8 +64,8 @@
       <file leaf-file-name="longestString.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/longestString.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="150">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -231,12 +231,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511825932178</updated>
       <workItem from="1511825933757" duration="10275000" />
-      <workItem from="1511840700097" duration="4937000" />
+      <workItem from="1511840700097" duration="5959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15212000" />
+    <option name="totallyTimeSpent" value="16234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="161" y="-1417" width="1774" height="1417" extended-state="0" />
@@ -424,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/longestString.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
+        <state relative-caret-position="150">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
