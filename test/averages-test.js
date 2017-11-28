@@ -29,5 +29,10 @@ describe('averages', function() {
       var num = [3, 13, 7]
       assert.equal(median(num), 7);
     })
+
+    it('can calculate the mode ', function() {
+      var num = [3, 13, 7, 7, 9, 7]
+      assert.equal(mode(num), 7);
+    })
   })
 })
