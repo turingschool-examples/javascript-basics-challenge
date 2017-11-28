@@ -1,18 +1,18 @@
-exports.totalAverage = function(array) {
+exports.total = function(array) {
   var newArray = array.reduce(function(total,start) {
     return total + start;
   }, 0);
   return newArray;
 };
 
-exports.meanAverage = function(array) {
+exports.mean = function(array) {
   var newArray = array.reduce(function(total,start) {
     return total + start;
   }, 0);
   return newArray / array.length;
 };
 
-exports.medianAverage = function(array) {
+exports.median = function(array) {
   var index1 = (array.length / 2) - 1;
   var index2 = Math.floor(array.length / 2);
 
@@ -24,17 +24,17 @@ exports.medianAverage = function(array) {
   }
 };
 
-exports.modeAverage = function(array) {
-  var newHash = {}
-
-  for (i = 0; i < array.length; i++) {
-    if (newHash[array[i]]) {
-      newHash[array[i]] = value + 1
-    }
-    else {
-      emptyHash[array[i]] = 1
-    }
-  }
-  return newHash
-  // find the max value of the given properties in the hash
-};
+// exports.mode = function(array) {
+//   var newHash = {}
+//
+//   for (i = 0; i < array.length; i++) {
+//     if (newHash[array[i]]) {
+//       newHash[array[i]] = value + 1
+//     }
+//     else {
+//       emptyHash[array[i]] = 1
+//     }
+//   }
+//   return newHash
+//   // find the max value of the given properties in the hash
+// };

@@ -8,7 +8,7 @@ describe("Average function thing", function() {
 
     var factThing = factorials.factorial(num);
 
-    expect(totalAverage).to.deep.equal(252);
+    expect(factThing).to.deep.equal(5040);
 
     });
   });

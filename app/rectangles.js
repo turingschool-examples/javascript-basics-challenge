@@ -13,8 +13,8 @@ exports.diagonal = function(rectangle) {
 exports.isSquare = function(rectangle) {
   if (rectangle.width === rectangle.height) {
     return true;
-  };
+  }
   else {
     return false;
-  };
+  }
 };
