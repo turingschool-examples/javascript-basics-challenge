@@ -20,4 +20,15 @@ describe("Averages", function() {
       assert.equal(functions.median(arr2), 6);
     });
   });
+  context("mode", function() {
+    it("returns the mode as an object of mode and frequency", function() {
+      var expectedMode = {
+        2: 2
+      };
+      assert.deepEqual(functions.mode(arr), expectedMode);
+    });
+  });
 });
+
+
+// 1, 2, 2, 3, 6, 7, 9, 10
