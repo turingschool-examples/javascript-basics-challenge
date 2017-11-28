@@ -11,5 +11,4 @@ describe('Rectangle', function() {
 
 
 
-
-})
+});
