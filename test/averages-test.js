@@ -17,6 +17,6 @@ describe('Averages', function(){
   });
 
   it('can find the mode', function() {
-    assert.deepEqual(average.mode([1,2,2,3]), { '1': 0, '2': 1, '3': 0 })
+    assert.deepEqual(average.mode([1,2,2,3]), { '1': 1, '2': 2, '3': 1})
   });
 })
