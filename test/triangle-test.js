@@ -1,5 +1,5 @@
 assert = require('chai').assert;
-const isTriangle = require('../lib/triangles');
+const isTriangle = require('../lib/triangle');
 
 describe("Triangle Determination", function() {
   context("A valid triangle", function() {

@@ -1,8 +1,8 @@
 assert = require('chai').assert;
-const total = require('../lib/averages').total;
-const mean = require('../lib/averages').mean;
-const median = require('../lib/averages').median;
-const mode = require('../lib/averages').mode;
+const total = require('../lib/average').total;
+const mean = require('../lib/average').mean;
+const median = require('../lib/average').median;
+const mode = require('../lib/average').mode;
 
 describe("Averages Calculations", function() {
   var numset = [1, 4, 4, 5, 8, 9, 11]
