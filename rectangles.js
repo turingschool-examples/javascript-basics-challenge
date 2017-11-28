@@ -1,16 +1,24 @@
-function area(width, height) {
-    return width * height;
-}
+// function area(width, height) {
+//     return width * height;
+// }
+//
+// function perimeter(width, height) {
+//     return (width + height) * 2;
+// }
+//
+// function diagional(width, height) {
+//     return Math.sqrt(a^2 + b^2);
+// }
+//
+// function isSquare(width, height) {
+//     return(width == height);
+// }
 
-function perimeter(width, height) {
-    return (width + height) * 2;
-}
+const area = (width, height) => width * height;
 
-function diagional(width, height) {
-    return Math.sqrt(a^2 + b^2);
-}
+const perimeter = (width, height) => (width + height) * 2;
 
-function isSquare(width, height) {
-    if (width == height);
-}
+const diagional = (width, height) => Math.sqrt(a^2 + b^2);
+
+const isSquare = (width, height) => (width == height);
 
