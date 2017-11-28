@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 const expect = require('chai').expect;
-const rect = require('./rectangle');
+const rect = require('./rectangles');
 
 describe('Rectangle', function() {
   context('geometry', function(){
