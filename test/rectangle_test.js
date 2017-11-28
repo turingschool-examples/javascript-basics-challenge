@@ -8,6 +8,10 @@ describe('Rectangle', function() {
       assert.equal(rectangle.area(shape), 200);
     });
 
+    it('can find the perimeter', () => {
+      var shape = {width: 10, height: 20};
+      assert.equal(rectangle.perimeter(shape), 60);
+    });
 
 
 
