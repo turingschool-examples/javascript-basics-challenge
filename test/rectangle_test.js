@@ -22,6 +22,6 @@ describe('Rectangle', function() {
       var square = {width: 10, height: 10};
       var nonSquare = {width: 10, height: 100};
       assert.isTrue(rectangle.isSquare(square));
-      assert.isFalse(rectangle.isSquare(notSquare));
+      assert.isFalse(rectangle.isSquare(nonSquare));
     });
 });
