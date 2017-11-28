@@ -4,6 +4,7 @@ var Averages = require('./averages');
 var Factorial = require('./factorial');
 var Longest = require('./longestString')
 var Times = require('./timesTable')
+var Random = require('./guesser')
 var area = Methods.area;
 var perimeter = Methods.perimeter;
 var diagonal = Methods.diagonal;
@@ -16,6 +17,8 @@ var mode = Averages.mode;
 var factorial = Factorial.factorial;
 var longestString = Longest.longestString;
 var timesTable = Times.timesTable;
+var randomNum = Random.randomNum
+var GuessingGame = Random.GuessingGame
 
 var assert = require('assert');
 describe('Rectangle', function() {
@@ -179,3 +182,13 @@ describe('Times Table', function() {
     });
   });
 });
+
+describe('Guessing Game', function() {
+  describe('GuessingGame#guess', function() {
+    it('should return You got it!', function(){
+      game = new GuessingGame(1);
+      assert.equal("You got it!", game.guess(1));
+    });
+  });
+});
+
