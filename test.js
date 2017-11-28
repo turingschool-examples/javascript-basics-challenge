@@ -178,7 +178,7 @@ describe('Times Table', function() {
       assert.equal("1", timesTable(1));
     });
     it('should print a times table for 5', function(){
-      assert.equal("1,2,3\n2,4,6\n3,6,9", timesTable(3));
+      assert.equal("1,2,3\n2,4,6\n3,6,9", timesTable(5));
     });
   });
 });
