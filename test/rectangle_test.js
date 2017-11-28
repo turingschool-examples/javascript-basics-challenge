@@ -18,5 +18,10 @@ describe('Rectangle', function() {
       assert.equal(rectangle.diagnol(shape), 22.36);
     });
 
-
+    it('can tell if rectangle is square', () => {
+      var square = {width: 10, height: 10};
+      var nonSquare = {width: 10, height: 100};
+      assert.isTrue(rectangle.isSquare(square));
+      assert.isFalse(rectangle.isSquare(notSquare));
+    });
 });
