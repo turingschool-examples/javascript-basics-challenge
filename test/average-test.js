@@ -29,6 +29,3 @@ describe("Averages", function() {
     });
   });
 });
-
-
-// 1, 2, 2, 3, 6, 7, 9, 10
