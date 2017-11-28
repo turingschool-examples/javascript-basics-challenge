@@ -25,7 +25,6 @@ describe("Guessing Game", function() {
     var game = new GuessingGame(20);
     it("returns false if there havn't been any guesses", function() {
       var notYetSolved = game.isSolved();
-      console.log(notYetSolved);
       expect(notYetSolved).to.be.false;
     })
     it("returns false if the last guess was wrong", function() {
@@ -37,6 +36,6 @@ describe("Guessing Game", function() {
       game.guess(20);
       var finallySolved = game.isSolved();
       expect(finallySolved).to.be.true;
-    })
-  })
+    });
+  });
 });
