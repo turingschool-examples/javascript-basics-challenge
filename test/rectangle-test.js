@@ -13,4 +13,9 @@ describe("Rectangle", function() {
       assert.equal(functions.perimeter(rectangle), 60);
     });
   });
+  context("diagonal", function() {
+    it("returns the length of the rectangle's diagonal", function() {
+      assert.equal(functions.diagonal(rectangle), 22.360679774997898)
+    })
+  })
 });
