@@ -5,8 +5,6 @@ exports.factorial = function(num) {
     factArray.push(i);
   }
 
-  console.log(factArray);
-
   var factorialNum = factArray.reduce(function(total,startNum) {
     return total * startNum;
   }, 1);
