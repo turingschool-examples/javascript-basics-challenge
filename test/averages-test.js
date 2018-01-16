@@ -13,7 +13,7 @@ describe("Averages finds things", function() {
 
     expect(total).to.deep.equal(41);
     expect(mean).to.deep.equal(5.857142857142857);
-    expect(median).to.deep.equal(10);
+    expect(median).to.deep.equal(5);
     expect(mode).to.deep.equal(2);
   })
 })

@@ -17,12 +17,13 @@ exports.median = function(array) {
     return a-b
   });
   var middleIndex = array.length / 2;
-  if (array.length % 2) {
+
+  if (array.length % 2 === 0) {
     var centerNum = (sortedArray[middleIndex] + sortedArray[middleIndex + 1]) / 2;
     return centerNum;
   }
   else {
-    return sortedArray[middleIndex + 1];
+    return sortedArray[middleIndex - 0.5];
   }
 }
 
