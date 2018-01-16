@@ -26,13 +26,35 @@ exports.median = function(array) {
   }
 }
 
+exports.mode = function(array) {
+  var sortedArray = array.sort(function(a, b) {
+    return a-b
+  });
+  var freqArray = []
+  for (var i = 0; i < sortedArray.length; i++) {
+    if (i === 0) {
+      var count = 1;
+      freqArray.push(count);
+    }
+    else if (sortedArray[i] === sortedArray[i-1]) {
+      count += 1;
+      freqArray.push(count);
+    }
+    else {
+      count = 1;
+      freqArray.push(count);
+    }
+  };
 
+  var stupidNum = Math.max(...freqArray)
+  var indexPos = 0
 
+  for (var i = 0; i < freqArray.length; i++) {
+    if (freqArray[i] === stupidNum) {
+      var indexPos = i
+    }
+  }
 
+  return array[indexPos]
 
-
-
-// total - returns the total of all the values in the array
-// mean - returns the mean (average) of the array
-// median - returns the median of the array
-// mode- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
+}
