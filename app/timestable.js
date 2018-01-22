@@ -15,13 +15,9 @@ exports.timesTable = function(num) {
     finalArray.push(rowArray);
   }
 
-  console.log(finalArray)
-
   var stringArray = finalArray.map(function(array) {
     return String(array);
   });
-
-  console.log(stringArray)
 
   return stringArray.join('\n');
 }
