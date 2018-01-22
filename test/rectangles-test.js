@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const geometry = require('./rectangles')
+const geometry = require('../lib/rectangles')
 
 describe("when passed a rectangle object", function(){
   it("can calculate the area", function(){
