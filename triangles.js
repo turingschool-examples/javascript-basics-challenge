@@ -1,19 +1,33 @@
 function isTriangle(x, y, z) {
-  var sideLengths = [x,y,z]
+  let sideLengths = [x,y,z]
 
-  if (sideLengths.includes(0)) {
+  if (containsNonPositive(sideLengths)) {
     return false
-  } else if (containsNegative(sideLengths)) {
+  } else if (legalLengths(x,y,z)) {
+    return true
+  } else {
     return false
   }
 }
 
-function containsNegative(numbers) {
-  var firstNegative = numbers.find(function(num) { num < 0 })
-  if (firstNegative === undefined) {
-    return true
-  } else {
+function containsNonPositive(numbers) {
+  let illegalLength = numbers.find(function(num) { return num <= 0 })
+
+  return isEmpty(illegalLength)
+}
+
+function legalLengths(x,y,z) {
+  let total = x + y + z
+  illegalLength = [x,y,z].find(function(num) { return (total - (2 * num)) <= 0 })
+
+  return !(isEmpty(illegalLength))
+}
+
+function isEmpty(value) {
+  if (value === undefined) {
     return false
+  } else {
+    return true
   }
 }
 
