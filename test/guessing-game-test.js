@@ -1,9 +1,9 @@
 const assert = require('chai').assert
-const game = new GuessingGame(5)
-const myFunctions = require('../lib/guessing-game')
+const GuessingGame = require('../lib/guessing-game')
 
 describe('guess', function() {
   it('responds to high response', function()  {
+    game = new GuessingGame(5)
     assert.strictEqual(game.guess(7), "high")
   })
 
