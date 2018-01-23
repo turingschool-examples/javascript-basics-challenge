@@ -25,5 +25,10 @@ describe("Array functions", function() {
     })
   })
 
-  
+  context("mode", function() {
+    it("returns an object with the mode(s) as properties and frequencies as values", function() {
+      expect(ArrayFunctions.mode([1,2,2,3])).to.deep.equal({2: 2})
+      expect(ArrayFunctions.mode([1,2,2,3,3])).to.deep.equal({2: 2, 3: 2})
+    })
+  })
 })

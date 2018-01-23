@@ -20,11 +20,37 @@ function median(array) {
     return array[medianIndex]
   }
 }
-// pry = require('pryjs')
-// eval(pry.it)
+
+function mode(array) {
+  var ValueFrequencies = findFrequencies(array)
+  var maxValue = findMax(ValueFrequencies)
+  return maxFrequencies(ValueFrequencies, maxValue)
+}
+
+function findFrequencies(array) {
+  return array.reduce( function(returnObj, num) {
+    returnObj[num] = returnObj[num] + 1 || 1
+    return returnObj
+  }, {})
+}
+
+function findMax(valueFrequencies) {
+  return Math.max(...(Object.values(valueFrequencies)))
+}
+
+function maxFrequencies(full, max) {
+  var filtered = {}
+  for (var property1 in full) {
+    if (full[property1] === max) {
+      filtered[property1] = full[property1]
+    }
+  }
+  return filtered
+}
 
 module.exports = {
   total,
   mean,
-  median
+  median,
+  mode
 }
