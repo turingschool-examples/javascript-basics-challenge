@@ -3,7 +3,11 @@
 In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:
 
 * Fork this repository
+<<<<<<< HEAD
+* As you work through each section below, add a file (named according to what exercise you're on).
+=======
 * As you work through each section below, add a file (named according to what exercise you're on). 
+>>>>>>> ae04c5fc702ccc8d981e6046961c2ce5a29d72fd
 * Complete the exercise by writing your JS code and corresponding unit tests.
 * **When you finish, create a Pull Request back to this repository with your completed challenge!**
 * If you have questions, please tag an instructor in your PR.
