@@ -7,4 +7,9 @@ it("returns the longest string in an array", function() {
   assert.equal("abcd", strings.longestString(array) );
 });
 
+it("returns null if array is empty", function() {
+  array = [];
+  assert.equal(null, strings.longestString(array));
+})
+
 
