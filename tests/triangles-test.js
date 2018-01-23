@@ -15,9 +15,9 @@ describe('Triangles', function() {
   })
 
   it('isTriangle can evaluate right triangles', function() {
-    assert.equal(triangles.isTriangle(8,6,10), true);
-    assert.equal(triangles.isTriangle(10,8,6), true);
-    assert.equal(triangles.isTriangle(6,8,10), true);
+    assert.equal(triangles.isTriangle(8,6,10), true)
+    assert.equal(triangles.isTriangle(10,8,6), true)
+    assert.equal(triangles.isTriangle(6,8,10), true)
   })
 
   it('isTriangle can evaluate for sides for which no triangle exists', function() {
