@@ -10,4 +10,10 @@ describe('longestString(array) functionality', function() {
       assert.equal(longestString.longestString(array2), 'socccceeerrrrr')
     })
   })
+
+  context('with an empty array', function() {
+    it('returns null', function() {
+      assert.equal(longestString.longestString([]), null)
+    })
+  })
 })
