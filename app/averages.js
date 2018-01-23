@@ -56,6 +56,6 @@ exports.mode = function(array) {
     }
   }
 
-  return array[indexPos]
+  return {array[indexPos]:freqArray[indexPos]}
 
 }
