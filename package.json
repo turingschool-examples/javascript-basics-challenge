@@ -1,0 +1,27 @@
+{
+  "name": "javascript-basics-challenge",
+  "version": "1.0.0",
+  "description": "In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:",
+  "main": "rectangle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seoulstice/javascript-basics-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seoulstice/javascript-basics-challenge/issues"
+  },
+  "homepage": "https://github.com/seoulstice/javascript-basics-challenge#readme"
+}
