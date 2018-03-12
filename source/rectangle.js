@@ -4,13 +4,13 @@ function area(rectangle) {
   return (Object.values(rectangle)[0]) * (Object.values(rectangle)[1])
 }
 
-module.exports = area
+function perimeter(rectangle) {
+  var sideA = (Object.values(rectangle)[0])
+  var sideB = (Object.values(rectangle)[1])
+  return (sideA * 2) + (sideB * 2)
+}
 
-// > rectangleOne[Object.keys(rectangleOne)[0]]
-// 20
-// > rectangleOne[Object.keys(rectangleOne)[1]]
-// 30
-// > [Object.keys(rectangleOne)[1]]
-// [ 'height' ]
-// > [Object.values(rectangleOne)[1]]
-// [ 30 ]
+module.exports = {
+   area,
+   perimeter
+}
