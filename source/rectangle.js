@@ -1,23 +1,29 @@
 pry = require('pryjs')
 
+function sideA(rectangle) {
+  return (Object.values(rectangle)[0])
+}
+
+function sideB(rectangle) {
+  return (Object.values(rectangle)[1])
+}
+
 function area(rectangle) {
-  return (Object.values(rectangle)[0]) * (Object.values(rectangle)[1])
+  return sideA(rectangle) * sideB(rectangle)
 }
 
 function perimeter(rectangle) {
-  var sideA = (Object.values(rectangle)[0])
-  var sideB = (Object.values(rectangle)[1])
-  return (sideA * 2) + (sideB * 2)
+  return (sideA(rectangle) * 2) + (sideB(rectangle) * 2)
 }
 
 function diagonal(rectangle) {
-  var squareSideA = Math.pow((Object.values(rectangle)[0]), 2);
-  var squareSideB = Math.pow((Object.values(rectangle)[1]), 2);
+  var squareSideA = Math.pow(sideA(rectangle), 2);
+  var squareSideB = Math.pow(sideB(rectangle), 2);
   return Math.floor(Math.sqrt(squareSideA + squareSideB));
 }
 
 function isSquare(rectangle) {
-  return ((Object.values(rectangle)[0]) === (Object.values(rectangle)[1]) ? true : false)
+  return (sideA(rectangle) === sideB(rectangle) ? true : false)
 }
 
 module.exports = {
