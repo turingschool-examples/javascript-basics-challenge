@@ -2,6 +2,7 @@ const assert = require('chai').assert
 const averages = require('../source/averages.js')
 const total = averages.total
 const mean = averages.mean
+const median = averages.median
 
 describe('average calculations', function() {
 
@@ -17,6 +18,15 @@ describe('average calculations', function() {
     var arrayTwo = [1, 2, 3, 4, 5]
     assert.equal(mean(arrayOne), 25)
     assert.equal(mean(arrayTwo), 3)
+  })
+
+  it('can return the median of an array of numbers', function(){
+    var arrayOne = [4, 6, 10, 99, 6]
+    var arrayTwo = [1, 2, 3, 4, 5, 6]
+    var arrayThree = [2, 55, 10, 3, 101, 40]
+    assert.equal(median(arrayOne), 6)
+    assert.equal(median(arrayTwo), 3.5)
+    assert.equal(median(arrayThree), 25)
   })
 })
 
