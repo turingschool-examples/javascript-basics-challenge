@@ -34,8 +34,7 @@ function median(array) {
 module.exports = {
   total,
   mean,
-  median,
-  mode
+  median
 }
 
 // total - returns the total of all the values in the array
