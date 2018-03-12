@@ -32,5 +32,8 @@ function isSquare(shape) {
 }
 
 
+
+
+
 // var rectangles = module.exports = {};
 module.exports = {area: area, perimeter: perimeter, diagonal : diagonal, isSquare :isSquare}
