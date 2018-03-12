@@ -25,6 +25,4 @@ describe("Rectangle functions", () => {
     assert.equal(s.isSquare(), true)
   })
 
-
-
 })
