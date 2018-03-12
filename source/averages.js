@@ -22,10 +22,20 @@ function median(array) {
   }
 }
 
+// function mode(array) {
+//   var counts = {};
+//   for (var i = 0; i < array.length; i++) {
+//     var num = array[i];
+//     counts[num] = counts[num] ? counts[num] + 1 : 1;
+//   }
+//
+// }
+
 module.exports = {
   total,
   mean,
-  median
+  median,
+  mode
 }
 
 // total - returns the total of all the values in the array

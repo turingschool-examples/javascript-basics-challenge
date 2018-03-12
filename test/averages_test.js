@@ -3,6 +3,7 @@ const averages = require('../source/averages.js')
 const total = averages.total
 const mean = averages.mean
 const median = averages.median
+const mode = averages.mode
 
 describe('average calculations', function() {
 
@@ -28,6 +29,15 @@ describe('average calculations', function() {
     assert.equal(median(arrayTwo), 3.5)
     assert.equal(median(arrayThree), 25)
   })
+
+  // it('can return the mode of an array of numbers', function(){
+  //   var arrayOne = [4, 6, 10, 99, 6, 10, 6]
+  //   var arrayTwo = [1, 2, 3, 4, 5, 6]
+  //   var arrayThree = [2, 3, 10, 3, 101, 3]
+  //   assert.equal(mode(arrayOne), {6: 3})
+  //   assert.equal(mode(arrayTwo), "No mode")
+  //   assert.equal(mode(arrayThree), {3: 3})
+  // })
 })
 
 // total - returns the total of all the values in the array
