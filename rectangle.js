@@ -1,15 +1,15 @@
-var rectangle = {width: 10, height: 20}
-
 
 // area
 function area(rectangle) {
   return rectangle.width * rectangle.height;
 }
 
+// perimeter
 function perimeter(rectangle) {
   return (2 * rectangle.width) + (2 * rectangle.height);
 }
 
+// diagonal
 function diagonal(rectangle) {
   return Math.sqrt(squaredRectangle(rectangle));
 }
@@ -18,6 +18,7 @@ function squaredRectangle(rectangle) {
   return ( Math.pow(rectangle.height, 2) + Math.pow(rectangle.width, 2));
 }
 
+// square or not?
 function isSquare(rectangle) {
   if(rectangle.width === rectangle.height) {
     return true
@@ -27,4 +28,8 @@ function isSquare(rectangle) {
   }
 }
 
-module.exports = { area:area, perimeter:perimeter, diagonal:diagonal, isSquare:isSquare}
+module.exports = { area:area,
+                   perimeter:perimeter,
+                   diagonal:diagonal,
+                   isSquare:isSquare
+                 }
