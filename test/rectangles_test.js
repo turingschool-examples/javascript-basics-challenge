@@ -1,7 +1,7 @@
 const assert = require('chai').assert
 var myFunctions = require('../rectangles.js')
 
-describe('retangle', function() {
+describe('rectangle', function() {
   context('area function', function() {
     it('it can calculate the area of a rectangle', function() {
       var rectangle = {width: 3, height: 4}
