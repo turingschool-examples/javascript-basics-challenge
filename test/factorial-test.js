@@ -5,6 +5,5 @@ describe("Factorial Test", () => {
   it("can find the factorial of a number", () => {
     let x = new Factorial(5)
     assert.equal(x.factorial(5), 120)
-
   })
 })
