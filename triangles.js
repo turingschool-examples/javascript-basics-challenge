@@ -6,9 +6,7 @@ function isNegative(element) { element < 0 }
 
 function isTriangle(a, b, c) {
   let sides = [a,b,c]
-  if (sides[0] === sides[1] && sides[1] === sides[2]) {
-    return false
-  } else if (sides.some(isNegative)) {
+  if (sides.some(isNegative)) {
     return false
   } else {
     return ((a + b > c) && (a + c > b) && (b + c > a)) ? true : false
