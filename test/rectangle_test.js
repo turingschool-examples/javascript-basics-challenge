@@ -3,6 +3,7 @@ const rectangle = require('../source/rectangle.js')
 const area = rectangle.area
 const perimeter = rectangle.perimeter
 const diagonal = rectangle.diagonal
+const isSquare = rectangle.isSquare
 
 
 describe('rectangle calculations', function() {
@@ -26,6 +27,13 @@ describe('rectangle calculations', function() {
     var rectangleTwo = {width: 50, height: 10}
     assert.equal(diagonal(rectangleOne), 36)
     assert.equal(diagonal(rectangleTwo), 50)
+  })
+
+  it('can determine whether or not it is a square', function(){
+    var rectangleOne = {width: 20, height: 30}
+    var rectangleTwo = {width: 40, height: 40}
+    // assert.equal(isSquare(rectangleOne), false)
+    assert.equal(isSquare(rectangleTwo), true)
   })
 })
 

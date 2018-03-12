@@ -16,9 +16,13 @@ function diagonal(rectangle) {
   return Math.floor(Math.sqrt(squareSideA + squareSideB));
 }
 
+function isSquare(rectangle) {
+  return ((Object.values(rectangle)[0]) === (Object.values(rectangle)[1]) ? true : false)
+}
 
 module.exports = {
    area,
    perimeter,
-   diagonal
+   diagonal,
+   isSquare
 }
