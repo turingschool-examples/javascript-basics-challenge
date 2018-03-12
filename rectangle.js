@@ -18,4 +18,13 @@ function squaredRectangle(rectangle) {
   return ( Math.pow(rectangle.height, 2) + Math.pow(rectangle.width, 2));
 }
 
-module.exports = { area:area, perimeter:perimeter, diagonal:diagonal}
+function isSquare(rectangle) {
+  if(rectangle.width === rectangle.height) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+module.exports = { area:area, perimeter:perimeter, diagonal:diagonal, isSquare:isSquare}
