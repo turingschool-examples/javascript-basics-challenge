@@ -10,7 +10,15 @@ function perimeter(rectangle) {
   return (sideA * 2) + (sideB * 2)
 }
 
+function diagonal(rectangle) {
+  var squareSideA = Math.pow((Object.values(rectangle)[0]), 2);
+  var squareSideB = Math.pow((Object.values(rectangle)[1]), 2);
+  return Math.floor(Math.sqrt(squareSideA + squareSideB));
+}
+
+
 module.exports = {
    area,
-   perimeter
+   perimeter,
+   diagonal
 }
