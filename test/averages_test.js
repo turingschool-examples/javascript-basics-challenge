@@ -3,7 +3,7 @@ const averages = require('../source/averages.js')
 const total = averages.total
 const mean = averages.mean
 const median = averages.median
-const mode = averages.mode
+// const mode = averages.mode
 
 describe('average calculations', function() {
 
