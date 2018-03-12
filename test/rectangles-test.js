@@ -27,6 +27,3 @@ describe("rectangle object and menthods", () => {
     })
   })
 })
-
-
-// 4. `isSquare(rectangle)` - returns `true` if the rectangle is a square and `false` otherwise
