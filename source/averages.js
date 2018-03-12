@@ -4,8 +4,13 @@ function total(array) {
   return array.reduce((sum, num) => sum + num)
 }
 
+function mean(array) {
+  return (total(array) / array.length)
+}
+
 module.exports = {
-  total
+  total,
+  mean
 }
 
 // total - returns the total of all the values in the array
