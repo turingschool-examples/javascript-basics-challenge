@@ -11,4 +11,12 @@ function diagonal(rec){
   return Math.sqrt(summedSquares);
 }
 
-module.exports = {area: area, perimeter: perimeter, diagonal: diagonal}
+function isSquare(rec){
+  if(rec.height == rec.width){
+    return true
+  } else {
+    return false
+  }
+}
+
+module.exports = {area: area, perimeter: perimeter, diagonal: diagonal, isSquare: isSquare}
