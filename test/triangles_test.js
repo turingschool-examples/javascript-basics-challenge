@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-var isTriangle = require('../triangles.js')
+var isTriangle = require('../lib/triangles.js')
 
 describe('triangle', function() {
   context('isTriangle function', function() {

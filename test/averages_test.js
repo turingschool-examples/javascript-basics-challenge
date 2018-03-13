@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-var myFunctions = require('../averages.js')
+var myFunctions = require('../lib/averages.js')
 
 
 describe('averages', function() {

@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-var myFunctions = require('../rectangles.js')
+var myFunctions = require('../lib/rectangles.js')
 
 describe('rectangle', function() {
   context('area function', function() {
