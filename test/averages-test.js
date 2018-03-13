@@ -26,8 +26,7 @@ describe('Averages', function () {
 
   context('mean function', function () {
     it('calculates the mean', function () {
-       assert.equal(mean([1, 2, 2, 2, 3, 3, 4, 5, 6]), 3.111111111111111
-)
+       assert.equal(mean([1, 2, 2, 2, 3, 3, 4, 5, 6]), 3.111111111111111)
     })
   })
 
