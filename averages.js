@@ -50,4 +50,4 @@ console.log(mode(someArray))
 // median - returns the median of the array
 // mode- returns an object representing the mode(s) of the array with the property being the mode and the value being the frequency
 
-
+module.exports = {total: total, mean: mean, median: median, mode: mode}
