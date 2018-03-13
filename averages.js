@@ -1,7 +1,8 @@
-// total from array
 function getSum(total, num) {
   return total + num;
 }
+
+// total from array
 
 function getTotal(array) {
   return array.reduce(getSum);
@@ -27,7 +28,8 @@ function getMedian(array) {
   return median
 }
 
+// mode from an array
 
-
+// ** not sure how to do **
 
 module.exports = { calculateAverage:calculateAverage, getTotal:getTotal, getMedian:getMedian }
