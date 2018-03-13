@@ -3,11 +3,11 @@ pry = require('pryjs')
 function GuessingGame(answer) {
   this.answer = answer
   this.guess = function(num) {
-    if (num < GuessingGame.answer) {
+    if (num < this.answer) {
       alert("low")
-    } else if ( num > GuessingGame.answer) {
+    } else if ( num > this.answer) {
       alert("high")
-    } else if (num === GuessingGame.answer) {
+    } else if (num === this.answer) {
       alert("correct")
     }
     this.last_guess = num
