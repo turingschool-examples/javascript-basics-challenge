@@ -4,4 +4,8 @@ function total(numbers){
   })
 }
 
-module.exports = {total: total}
+function mean(numbers){
+  return total(numbers) / numbers.length;
+}
+
+module.exports = {total: total, mean: mean}
