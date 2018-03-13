@@ -18,7 +18,7 @@ function median(someArray) {
     index2 = index1 + 1
     return (someArray[index1] + someArray[index2]) / 2
   } else {
-    let index = (someArray.length / 2).floor
+    let index = Math.floor(someArray.length / 2)
     return someArray[index]
   }
 }
