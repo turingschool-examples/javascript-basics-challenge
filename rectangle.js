@@ -21,10 +21,10 @@ function squaredRectangle(rectangle) {
 // square or not?
 function isSquare(rectangle) {
   if(rectangle.width === rectangle.height) {
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
