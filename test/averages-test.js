@@ -19,4 +19,13 @@ describe('array statistics', function(){
     var nums = [4,5,3,6,2]
     assert.equal(median(nums), 4)
   })
+
+  it('can calculate mode', function(){
+    var nums = [4,5,3,6,2]
+    var nums2 = [4,4,5,3,6,2]
+    var nums3 = [4,5,3,3,6,6,2]
+    assert.deepEqual(mode(nums), [2,3,4,5,6])
+    assert.equal(mode(nums2), 4)
+    assert.deepEqual(mode(nums3), [3,6])
+  })
 })
