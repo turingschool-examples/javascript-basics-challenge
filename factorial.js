@@ -1,9 +1,9 @@
-function factorial(num){
+function factor(num){
   if(num == 0)
     return 1;
   else {
-    return (num * factorial(num-1));
+    return (num * factor(num-1));
   }
-}
+};
 
-modules.export = [factorial:factorial]
+module.export = {factor: factor}

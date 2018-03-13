@@ -39,8 +39,8 @@ function bubbleSort(array){
 
 
 function median(data){
-  let median = 0;
-  let length = data.length;
+   median = 0;
+   length = data.length;
     data.sort();
     if (length % 2 === 0) {
       median = (data[length / 2 - 1] + data[length / 2]) / 2;
@@ -49,10 +49,10 @@ function median(data){
     }
   return median;
 }
-
-function mode(data) {
-  
-}
+//
+// function mode(data) {
+//
+// }
 
 
 
