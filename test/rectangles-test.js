@@ -1,7 +1,7 @@
 const assert = require('chai').assert
 const [area, perimeter, diagonal, isSquare] = require("../lib/rectangles")
 
-describe("rectangle object and menthods", () => {
+describe("Rectangles", () => {
   context("instance methods", () => {
     let rectangle = {width: 10, height: 20}
     it("area returns the area of the rectangle", () => {
