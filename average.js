@@ -49,10 +49,27 @@ function median(data){
     }
   return median;
 }
-//
-// function mode(data) {
-//
-// }
+
+function mode(data) {
+  var counter = {};
+  var check   = 0;
+  var result;
+  for (var i = 0; i < data.length; i++) {
+    var number = data[i];
+
+    if (counter[number] === undefined){
+      counter[number] = 1;
+    } else {
+      counter[number] = counter[number] + 1;
+    }
+    if(counter[number] > check){
+      check = counter[number];
+      result = data[i];
+    }
+  }
+  //ask lovisa about this if block 
+  return result;
+}
 
 
 
