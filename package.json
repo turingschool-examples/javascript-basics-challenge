@@ -1,0 +1,30 @@
+{
+  "name": "javascript-basics-challenge",
+  "version": "1.0.0",
+  "description": "In this challenge, you'll deepen your JavaScript fundamentals by completing a series of exercises. You'll need to follow the following steps to successfully complete this challenge:",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "pry": "^0.8.1",
+    "pryjs": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharylandes/javascript-basics-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharylandes/javascript-basics-challenge/issues"
+  },
+  "homepage": "https://github.com/zacharylandes/javascript-basics-challenge#readme"
+}
